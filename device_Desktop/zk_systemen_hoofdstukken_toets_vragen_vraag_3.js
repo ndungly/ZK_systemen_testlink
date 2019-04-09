@@ -1,0 +1,796 @@
+if (window.VarCurrentView) VarCurrentView.set('Desktop');
+function init_Desktop() {
+	if ( rcdObj.view != 'Desktop' ) return;
+	if (!isOPAPub() || isLOPopup()) window.init_page();
+	preload(rcdObj['preload_'+rcdObj.view]);
+}
+function defineFuncs_Desktop() {
+	if ( rcdObj.view != 'Desktop' ) return;
+	try{
+		if (window.initGEV)
+		{
+		 initGEV(0,swipeLeft,swipeRight);
+
+		}
+		} catch(e) { if (window.console) window.console.log(e); }	pageClick = n;
+	pageRClick = n;
+	pageKey = n;
+}
+og4.rcdData.att_Desktop = 
+{
+	innerHtml:	"",
+	cssText:	"",
+	cssClasses:	"",
+	htmlId:		"og4",
+	bInsAnc:	undefined,
+	objData:	{"a":[0,32,0,[]],"bReadLast":false}
+};
+image84.rcdData.att_Desktop = 
+{
+	innerHtml:	"<img id=\"tobj84Img\" src=\"images/Logo-ZK.jpg\" style=\"position: absolute; border-style: none; left: 0px; top: 0px; width: 134px; height: 41px;\">",
+	cssText:	"visibility: inherit; position: absolute; left: 21px; top: 19px; width: 134px; height: 41px; z-index: 4;",
+	cssClasses:	"",
+	htmlId:		"tobj84",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"Logo-ZK"
+	},
+	objData:	{"a":[0,288,0,[21,19,134,41]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":21,"y":19,"width":134,"height":41}}
+};
+text83.rcdData.att_Desktop = 
+{
+	innerHtml:	"<div name=\"dCon\" style=\"position: absolute; left: 0px; top: 0px; width: 403px; min-height: 77px;\"><div name=\"dCon2\" class=\"ttxt\" style=\"left: 5px; top: 5px; width: 393px; min-height: 67px;\"><p style=\"margin-left: 0px; text-indent: 0px; margin-top: 0px; margin-bottom: 0px; text-align: center;\"><strong><span style=\"font-size:16pt; font-family: &quot;Titillium Web&quot;, sans-serif; color: rgb(0, 104, 189);\">Openbare systemen</span></strong></p></div></div>",
+	cssText:	"visibility: inherit; position: absolute; left: 482px; top: 7px; width: 403px; height: 77px; z-index: 5;",
+	cssClasses:	"header-module-title",
+	htmlId:		"tobj83",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"Module title"
+	},
+	objData:	{"a":[0,32,0,[482,7,403,77]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":482,"y":7,"width":403,"height":77},"dwTextFlags":0,"marginSize":5,"textPublishLang":"Inherit"}
+};
+textbutton109.rcdData.att_Desktop = 
+{
+	innerHtml:	"<svg viewBox=\"0 0 125 58\" preserveAspectRatio=\"none\" focusable=\"false\" style=\"pointer-events: none; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;\" aria-hidden=\"true\"><g transform=\"translate(62.5 29)\" style=\"\">\n	<path d=\"M 0 0 L 125 0 L 125 58 L 0 58 L 0 0 Z\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity:0;filter:alpha(opacity=0); fill-rule: nonzero; opacity:1;filter:alpha(opacity=100); pointer-events: auto;\" transform=\"translate(0 0) translate(-62.5, -29) \" stroke-linecap=\"round\"></path>\n	<pattern id=\"SVGID_4156_1060_15979\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n<image x=\"0\" y=\"0\" width=\"125\" height=\"58\" xlink:href=\"images/Button_menu_groot.png\" preserveAspectRatio=\"none\"></image>\n</pattern>\n<path d=\"M 0 0 L 125 0 L 125 58 L 0 58 L 0 0\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: url(&quot;#SVGID_4156_1060_15979&quot;); fill-rule: nonzero; opacity:1;filter:alpha(opacity=100); pointer-events: auto;\" transform=\"translate(0 0) translate(-62.5, -29) \" stroke-linecap=\"round\"></path>\n</g>\n	<g transform=\"translate(62.5 29)\">\n		<text font-family=\"Lucida Sans Unicode\" font-size=\"-21.3333328\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity:1;filter:alpha(opacity=100);\">\n			<tspan x=\"0\" y=\"-6.72\" fill=\"#FFFFFF\"></tspan>\n		</text>\n	</g>\n</svg>",
+	cssText:	"visibility: inherit; position: absolute; left: 1066px; top: 10px; width: 125px; height: 58px; z-index: 6; cursor: pointer; overflow: visible; pointer-events: none;",
+	cssClasses:	"",
+	htmlId:		"tobj109",
+	bInsAnc:	1,
+	cwObj:		{
+		"name":	"Button menu",
+		"arChld":
+	[
+		{type:6,on:2,delay:0,name:'OnMClkGoTo',actItem:function(){ trivExitPage('zk_systemen_hoofdmenu_hoofdmenu.html',true,false);
+    if(typeof pF == 'function') pF(); }}
+	]
+	},
+	objData:	{"a":[4,33056,0,[1065.9999999999998,10.000000000000313,125,58]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":1066,"y":10,"width":125,"height":58},"imgDataNormal":"images/desktop_shape109.png","imgDataOver":"images/desktop_shape109.png","imgDataDown":"images/desktop_shape109.png","imgDataDisabled":"images/desktop_shape109_disabled.png","svgDataNormal":"<g transform=\"translate(62.5 29)\" style=\"\">\n\t<path d=\"M 0 0 L 125 0 L 125 58 L 0 58 L 0 0 Z\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity: 0; fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-62.5, -29) \" stroke-linecap=\"round\"></path>\n\t<pattern id=\"SVGID_4156_1060_15979\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n<image x=\"0\" y=\"0\" width=\"125\" height=\"58\" xlink:href=\"images/Button_menu_groot.png\" preserveAspectRatio=\"none\"></image>\n</pattern>\n<path d=\"M 0 0 L 125 0 L 125 58 L 0 58 L 0 0\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: url(&quot;#SVGID_4156_1060_15979&quot;); fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-62.5, -29) \" stroke-linecap=\"round\"></path>\n</g>\n\t<g transform=\"translate(62.5 29)\">\n\t\t<text font-family=\"Lucida Sans Unicode\" font-size=\"-21.3333328\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\">\n\t\t\t<tspan x=\"0\" y=\"-6.72\" fill=\"#FFFFFF\"></tspan>\n\t\t</text>\n\t</g>\n","svgDataOver":"<g transform=\"translate(62.5 29)\" style=\"\">\n\t<path d=\"M 0 0 L 125 0 L 125 58 L 0 58 L 0 0 Z\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity: 0; fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-62.5, -29) \" stroke-linecap=\"round\"></path>\n\t<pattern id=\"SVGID_4156_1060_15981\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n<image x=\"0\" y=\"0\" width=\"125\" height=\"58\" xlink:href=\"images/Button_menu_groot.png\" preserveAspectRatio=\"none\"></image>\n</pattern>\n<path d=\"M 0 0 L 125 0 L 125 58 L 0 58 L 0 0\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: url(&quot;#SVGID_4156_1060_15981&quot;); fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-62.5, -29) \" stroke-linecap=\"round\"></path>\n</g>\n\t<g transform=\"translate(62.5 29)\">\n\t\t<text font-family=\"Lucida Sans Unicode\" font-size=\"-21.3333328\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\">\n\t\t\t<tspan x=\"0\" y=\"-6.72\" fill=\"#FFFFFF\"></tspan>\n\t\t</text>\n\t</g>\n","svgDataDown":"<g transform=\"translate(62.5 29)\" style=\"\">\n\t<path d=\"M 0 0 L 125 0 L 125 58 L 0 58 L 0 0 Z\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity: 0; fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-62.5, -29) \" stroke-linecap=\"round\"></path>\n\t<pattern id=\"SVGID_4156_1060_15983\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n<image x=\"0\" y=\"0\" width=\"125\" height=\"58\" xlink:href=\"images/Button_menu_groot.png\" preserveAspectRatio=\"none\"></image>\n</pattern>\n<path d=\"M 0 0 L 125 0 L 125 58 L 0 58 L 0 0\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: url(&quot;#SVGID_4156_1060_15983&quot;); fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-62.5, -29) \" stroke-linecap=\"round\"></path>\n</g>\n\t<g transform=\"translate(62.5 29)\">\n\t\t<text font-family=\"Lucida Sans Unicode\" font-size=\"-21.3333328\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\">\n\t\t\t<tspan x=\"0\" y=\"-6.72\" fill=\"#FFFFFF\"></tspan>\n\t\t</text>\n\t</g>\n","svgDataDisabled":"<g transform=\"translate(62.5 29)\" style=\"\">\n\t<path d=\"M 0 0 L 125 0 L 125 58 L 0 58 L 0 0 Z\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity: 0; fill-rule: nonzero; opacity: 0.6; pointer-events: auto;\" transform=\"translate(0 0) translate(-62.5, -29) \" stroke-linecap=\"round\"></path>\n\t<pattern id=\"SVGID_4156_1060_15985\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n<image x=\"0\" y=\"0\" width=\"125\" height=\"58\" xlink:href=\"images/Button_menu_groot.png\" preserveAspectRatio=\"none\"></image>\n</pattern>\n<path d=\"M 0 0 L 125 0 L 125 58 L 0 58 L 0 0\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: url(&quot;#SVGID_4156_1060_15985&quot;); fill-rule: nonzero; opacity: 0.6; pointer-events: auto;\" transform=\"translate(0 0) translate(-62.5, -29) \" stroke-linecap=\"round\"></path>\n</g>\n\t<g transform=\"translate(62.5 29)\">\n\t\t<text font-family=\"Lucida Sans Unicode\" font-size=\"-21.3333328\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 0.6;\">\n\t\t\t<tspan x=\"0\" y=\"-6.72\" fill=\"#FFFFFF\"></tspan>\n\t\t</text>\n\t</g>\n","btnState":"enabled","fallbackImg":"<img alt=\"\" title=\"\" style=\"position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;\">"}
+};
+textbutton81.rcdData.att_Desktop = 
+{
+	innerHtml:	"<svg viewBox=\"0 0 150 58\" preserveAspectRatio=\"none\" focusable=\"false\" style=\"pointer-events: none; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;\" aria-hidden=\"true\"><g transform=\"translate(75 29)\" style=\"\">\n	<path d=\"M 0 0 L 150 0 L 150 58 L 0 58 L 0 0 Z\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity:0;filter:alpha(opacity=0); fill-rule: nonzero; opacity:1;filter:alpha(opacity=100); pointer-events: auto;\" transform=\"translate(0 0) translate(-75, -29) \" stroke-linecap=\"round\"></path>\n	<pattern id=\"SVGID_4156_1060_15987\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n<image x=\"0\" y=\"0\" width=\"150\" height=\"58\" xlink:href=\"images/Button_sluit_groot.png\" preserveAspectRatio=\"none\"></image>\n</pattern>\n<path d=\"M 0 0 L 150 0 L 150 58 L 0 58 L 0 0\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: url(&quot;#SVGID_4156_1060_15987&quot;); fill-rule: nonzero; opacity:1;filter:alpha(opacity=100); pointer-events: auto;\" transform=\"translate(0 0) translate(-75, -29) \" stroke-linecap=\"round\"></path>\n</g>\n	<g transform=\"translate(75 29)\">\n		<text font-family=\"Lucida Sans Unicode\" font-size=\"-21.3333328\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity:1;filter:alpha(opacity=100);\">\n			<tspan x=\"0\" y=\"-6.72\" fill=\"#FFFFFF\"></tspan>\n		</text>\n	</g>\n</svg>",
+	cssText:	"visibility: inherit; position: absolute; left: 1202px; top: 10px; width: 150px; height: 58px; z-index: 7; cursor: pointer; overflow: visible; pointer-events: none;",
+	cssClasses:	"",
+	htmlId:		"tobj81",
+	bInsAnc:	1,
+	cwObj:		{
+		"name":	"Button sluit",
+		"arChld":
+	[
+		{type:6,on:2,delay:0,name:'OnMClkExitClose',actItem:function(){ {cleanupTitle('zk_systemen.html'); trivExitPage('ObjLayerActionExit()',false);} 
+    if(typeof pF == 'function') pF(); }}
+	]
+	},
+	objData:	{"a":[4,33056,0,[1202,10.00000000000039,150,58]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":1202,"y":10,"width":150,"height":58},"imgDataNormal":"images/desktop_shape72.png","imgDataOver":"images/desktop_shape72.png","imgDataDown":"images/desktop_shape72.png","imgDataDisabled":"images/desktop_shape72_disabled.png","svgDataNormal":"<g transform=\"translate(75 29)\" style=\"\">\n\t<path d=\"M 0 0 L 150 0 L 150 58 L 0 58 L 0 0 Z\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity: 0; fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-75, -29) \" stroke-linecap=\"round\"></path>\n\t<pattern id=\"SVGID_4156_1060_15987\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n<image x=\"0\" y=\"0\" width=\"150\" height=\"58\" xlink:href=\"images/Button_sluit_groot.png\" preserveAspectRatio=\"none\"></image>\n</pattern>\n<path d=\"M 0 0 L 150 0 L 150 58 L 0 58 L 0 0\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: url(&quot;#SVGID_4156_1060_15987&quot;); fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-75, -29) \" stroke-linecap=\"round\"></path>\n</g>\n\t<g transform=\"translate(75 29)\">\n\t\t<text font-family=\"Lucida Sans Unicode\" font-size=\"-21.3333328\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\">\n\t\t\t<tspan x=\"0\" y=\"-6.72\" fill=\"#FFFFFF\"></tspan>\n\t\t</text>\n\t</g>\n","svgDataOver":"<g transform=\"translate(75 29)\" style=\"\">\n\t<path d=\"M 0 0 L 150 0 L 150 58 L 0 58 L 0 0 Z\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity: 0; fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-75, -29) \" stroke-linecap=\"round\"></path>\n\t<pattern id=\"SVGID_4156_1060_15989\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n<image x=\"0\" y=\"0\" width=\"150\" height=\"58\" xlink:href=\"images/Button_sluit_groot.png\" preserveAspectRatio=\"none\"></image>\n</pattern>\n<path d=\"M 0 0 L 150 0 L 150 58 L 0 58 L 0 0\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: url(&quot;#SVGID_4156_1060_15989&quot;); fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-75, -29) \" stroke-linecap=\"round\"></path>\n</g>\n\t<g transform=\"translate(75 29)\">\n\t\t<text font-family=\"Lucida Sans Unicode\" font-size=\"-21.3333328\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\">\n\t\t\t<tspan x=\"0\" y=\"-6.72\" fill=\"#FFFFFF\"></tspan>\n\t\t</text>\n\t</g>\n","svgDataDown":"<g transform=\"translate(75 29)\" style=\"\">\n\t<path d=\"M 0 0 L 150 0 L 150 58 L 0 58 L 0 0 Z\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity: 0; fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-75, -29) \" stroke-linecap=\"round\"></path>\n\t<pattern id=\"SVGID_4156_1060_15991\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n<image x=\"0\" y=\"0\" width=\"150\" height=\"58\" xlink:href=\"images/Button_sluit_groot.png\" preserveAspectRatio=\"none\"></image>\n</pattern>\n<path d=\"M 0 0 L 150 0 L 150 58 L 0 58 L 0 0\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: url(&quot;#SVGID_4156_1060_15991&quot;); fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-75, -29) \" stroke-linecap=\"round\"></path>\n</g>\n\t<g transform=\"translate(75 29)\">\n\t\t<text font-family=\"Lucida Sans Unicode\" font-size=\"-21.3333328\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\">\n\t\t\t<tspan x=\"0\" y=\"-6.72\" fill=\"#FFFFFF\"></tspan>\n\t\t</text>\n\t</g>\n","svgDataDisabled":"<g transform=\"translate(75 29)\" style=\"\">\n\t<path d=\"M 0 0 L 150 0 L 150 58 L 0 58 L 0 0 Z\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity: 0; fill-rule: nonzero; opacity: 0.6; pointer-events: auto;\" transform=\"translate(0 0) translate(-75, -29) \" stroke-linecap=\"round\"></path>\n\t<pattern id=\"SVGID_4156_1060_15993\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n<image x=\"0\" y=\"0\" width=\"150\" height=\"58\" xlink:href=\"images/Button_sluit_groot.png\" preserveAspectRatio=\"none\"></image>\n</pattern>\n<path d=\"M 0 0 L 150 0 L 150 58 L 0 58 L 0 0\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: url(&quot;#SVGID_4156_1060_15993&quot;); fill-rule: nonzero; opacity: 0.6; pointer-events: auto;\" transform=\"translate(0 0) translate(-75, -29) \" stroke-linecap=\"round\"></path>\n</g>\n\t<g transform=\"translate(75 29)\">\n\t\t<text font-family=\"Lucida Sans Unicode\" font-size=\"-21.3333328\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 0.6;\">\n\t\t\t<tspan x=\"0\" y=\"-6.72\" fill=\"#FFFFFF\"></tspan>\n\t\t</text>\n\t</g>\n","btnState":"enabled","fallbackImg":"<img alt=\"\" title=\"\" style=\"position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;\">"}
+};
+shape80.rcdData.att_Desktop = 
+{
+	innerHtml:	"<svg viewBox=\"0 0 1366 78\" preserveAspectRatio=\"none\" focusable=\"false\" style=\"pointer-events: none; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;\"><g transform=\"translate(683 39)\" style=\"\">\n	<path d=\"M 0 0 L 1366 0 L 1366 78 L 0 78 L 0 0 Z\" style=\"stroke: rgb(238, 238, 238); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity:0;filter:alpha(opacity=0); fill-rule: nonzero; opacity:1;filter:alpha(opacity=100); pointer-events: auto;\" transform=\"translate(0 0) translate(-683, -39) \" stroke-linecap=\"round\"></path>\n</g>\n	<g transform=\"translate(683 39)\">\n		<text font-family=\"Verdana\" font-size=\"-19.9999995\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(125,96,62); fill-rule: nonzero; opacity:1;filter:alpha(opacity=100);\">\n			<tspan x=\"0\" y=\"-6.3\" fill=\"#7D603E\"></tspan>\n		</text>\n	</g>\n</svg>",
+	cssText:	"visibility: inherit; position: absolute; left: 0px; top: 3.75167e-12px; width: 1366px; height: 78px; z-index: 8; overflow: visible; pointer-events: none;",
+	cssClasses:	"",
+	htmlId:		"tobj80",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"Header"
+	},
+	objData:	{"a":[0,32,0,[0,3.751665644813329e-12,1366,78]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":0,"y":0,"width":1366,"height":78},"btnState":"disabled","fallbackImg":"<img src=\"images/desktop_shape71.png\" alt=\"\" title=\"\" style=\"position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;\">"}
+};
+shape93.rcdData.att_Desktop = 
+{
+	innerHtml:	"<svg viewBox=\"0 0 1366 690\" preserveAspectRatio=\"none\" focusable=\"false\" style=\"pointer-events: none; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;\"><g transform=\"translate(683 345)\" style=\"\">\n	<path d=\"M 0 0 L 1366 0 L 1366 690 L 0 690 L 0 0 Z\" style=\"stroke: rgb(238, 238, 238); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(214, 239, 240); fill-rule: nonzero; opacity:1;filter:alpha(opacity=100); pointer-events: auto;\" transform=\"translate(0 0) translate(-683, -345) \" stroke-linecap=\"round\"></path>\n</g>\n	<g transform=\"translate(683 345)\">\n		<text font-family=\"\'Verdana\',sans serif\" font-size=\"18.6666662\" font-weight=\"bold\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(102,102,102); fill-rule: nonzero; opacity:1;filter:alpha(opacity=100);\">\n			<tspan x=\"0\" y=\"5.88\" fill=\"#666666\"></tspan>\n		</text>\n	</g>\n</svg>",
+	cssText:	"visibility: inherit; position: absolute; left: -2.50111e-12px; top: 78px; width: 1366px; height: 690px; z-index: 9; overflow: visible; pointer-events: none;",
+	cssClasses:	"",
+	htmlId:		"tobj93",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"Bg"
+	},
+	objData:	{"a":[0,32,0,[-2.5011104298755527e-12,78.00000000000375,1366,690]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":0,"y":78,"width":1366,"height":690},"btnState":"disabled","fallbackImg":"<img src=\"images/desktop_shape93.png\" alt=\"\" title=\"\" style=\"position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;\">"}
+};
+qu3778.rcdData.att_Desktop = 
+{
+	innerHtml:	"",
+	cssText:	"",
+	cssClasses:	"",
+	htmlId:		"qu3778",
+	bInsAnc:	undefined,
+	cwObj:		{
+				"crLineColor":	"",
+				"questType":	2,
+				"dwQuestFlags":	0,
+				"doImmFeedback":	0,
+				"maxAllowedAttempts":	0,
+				"arrAns":	["\\u0043\\u0068\\u006F\\u0069\\u0063\\u0065\\u0020\\u004F\\u006E\\u0065"],
+				"correctFeedbackFunc":	0,
+				"incorrectFeedbackFunc":	0,
+				"attemptsFeedbackFunc":	0,
+				"varQuest":	VarQuestion_62679
+	},
+	objData:	{"a":[0,32,0,[]]}
+};
+text3779.rcdData.att_Desktop = 
+{
+	innerHtml:	"<div name=\"dCon\" style=\"position: absolute; left: 0px; top: 0px; width: 113px; min-height: 20px;\"><legend><div name=\"dCon2\" class=\"ttxt\" style=\"left: 0px; top: 0px; width: 113px; min-height: 20px;\"><p align=\"left\"><span style=\"font-family:Arial,sans-serif;color:#000000;font-size:12pt;\">Question Text</span></p></div></legend></div>",
+	cssText:	"visibility: inherit; position: absolute; left: 50px; top: -250px; width: 113px; height: 20px; z-index: 10;",
+	cssClasses:	"",
+	htmlId:		"tobj3779",
+	bInsAnc:	0,
+	fieldsetId:	'fset3778',
+	cwObj:		{
+		"name":	"Question Text"
+	},
+	objData:	{"a":[0,32,0,[50,-250,113,20]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":50,"y":-250,"width":113,"height":20},"dwTextFlags":0,"marginSize":0,"textPublishLang":"Inherit"}
+};
+text3780.rcdData.att_Desktop = 
+{
+	innerHtml:	"<div name=\"dCon\" style=\"position: absolute; left: 0px; top: 0px; width: 100px; min-height: 20px;\"><div name=\"dCon2\" class=\"ttxt\" style=\"left: 0px; top: 0px; width: 100px; min-height: 20px;\"><p align=\"left\"><span style=\"font-family:Arial,sans-serif;color:#000000;font-size:12pt;\">Choice One</span></p></div></div>",
+	cssText:	"visibility: inherit; position: absolute; left: 79px; top: -220px; width: 100px; height: 20px; z-index: 11;",
+	cssClasses:	"",
+	htmlId:		"tobj3780",
+	bInsAnc:	0,
+	fieldsetId:	'fset3778',
+	cwObj:		{
+		"name":	"Choice 1 text"
+	},
+	objData:	{"a":[0,32,0,[79,-220,100,20]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":79,"y":-220,"width":100,"height":20},"dwTextFlags":0,"marginSize":0,"textPublishLang":"Inherit"}
+};
+radio3781.rcdData.att_Desktop = 
+{
+	innerHtml:	"<div style=\"white-space: nowrap; position: absolute; left: 0px; top: 0px; width: 19px; height: 19px;\"><input type=\"radio\" id=\"rad3781\" name=\"rad3778\" value=\"Choice One\" onclick=\"VarQuestion_62679.set(this.value);qu3778.questionUpdated();\" style=\"cursor: pointer; background-image: url(&quot;images/trivantis-blank.gif&quot;);\"></div>",
+	cssText:	"visibility: inherit; position: absolute; left: 50px; top: -219px; width: 19px; height: 19px; z-index: 12;",
+	cssClasses:	"",
+	htmlId:		"tobj3781",
+	bInsAnc:	0,
+	fieldsetId:	'fset3778',
+	cwObj:		{
+		"name":	"Choice 1 button"
+	},
+	objData:	{"a":[0,32,0,[50,-219,19,19]],"rcdOvr":{"res":0},"desktopRect":{"x":50,"y":-219,"width":19,"height":19},"formType":1,"dwFormFlags":0}
+};
+shape3782.rcdData.att_Desktop = 
+{
+	innerHtml:	"<svg viewBox=\"0 0 1001 590\" preserveAspectRatio=\"none\" focusable=\"false\" style=\"pointer-events: none; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;\"><g transform=\"translate(500.5 295)\" style=\"\">\n	<path d=\"M 5.9 0 L 995.1 0 A 5.9 5.9 0 0 1 1001 5.9 L 1001 584.1 A 5.9 5.9 0 0 1 995.1 590 L 5.9 590 A 5.9 5.9 0 0 1 0 584.1 L 0 5.9 A 5.9 5.9 0 0 1 5.9 0 Z\" style=\"stroke: rgb(1, 0, 0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-rule: nonzero; opacity:1;filter:alpha(opacity=100); pointer-events: auto;\" transform=\"translate(0 0) translate(-500.5, -295) \" stroke-linecap=\"round\"></path>\n</g>\n	<g transform=\"translate(500.5 295)\">\n		<text font-family=\"Lucida Sans Unicode\" font-size=\"15.9999996\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity:1;filter:alpha(opacity=100);\">\n			<tspan x=\"0\" y=\"5.04\" fill=\"#FFFFFF\"></tspan>\n		</text>\n	</g>\n</svg>",
+	cssText:	"visibility: inherit; position: absolute; left: 182px; top: 115px; width: 1001px; height: 590px; z-index: 13; overflow: visible; pointer-events: none;",
+	cssClasses:	"",
+	htmlId:		"tobj3782",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"BG"
+	},
+	objData:	{"a":[0,32,0,[181.99999999999977,115.00000000000045,1001,590]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":182,"y":115,"width":1001,"height":590},"btnState":"disabled","fallbackImg":"<img src=\"images/desktop_shape3782.png\" alt=\"\" title=\"\" style=\"position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;\">"}
+};
+textbutton3783.rcdData.att_Desktop = 
+{
+	innerHtml:	"<svg viewBox=\"0 0 50 50\" preserveAspectRatio=\"none\" focusable=\"false\" style=\"pointer-events: none; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;\" aria-hidden=\"true\"><g transform=\"translate(25 25)\" style=\"\">\n	<path d=\"M 0 0 L 50 0 L 50 50 L 0 50 L 0 0 Z\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity:0;filter:alpha(opacity=0); fill-rule: nonzero; opacity:1;filter:alpha(opacity=100); pointer-events: auto;\" transform=\"translate(0 0) translate(-25, -25) \" stroke-linecap=\"round\"></path>\n	<pattern id=\"SVGID_4156_3809_16971\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n<image x=\"0\" y=\"0\" width=\"50\" height=\"50\" xlink:href=\"images/Button_vorige50.png\" preserveAspectRatio=\"none\"></image>\n</pattern>\n<path d=\"M 0 0 L 50 0 L 50 50 L 0 50 L 0 0\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: url(&quot;#SVGID_4156_3809_16971&quot;); fill-rule: nonzero; opacity:1;filter:alpha(opacity=100); pointer-events: auto;\" transform=\"translate(0 0) translate(-25, -25) \" stroke-linecap=\"round\"></path>\n</g>\n	<g transform=\"translate(25 25)\">\n		<text font-family=\"Lucida Sans Unicode\" font-size=\"-21.3333328\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity:1;filter:alpha(opacity=100);\">\n			<tspan x=\"0\" y=\"-6.72\" fill=\"#FFFFFF\"></tspan>\n		</text>\n	</g>\n</svg>",
+	cssText:	"visibility: hidden; position: absolute; left: 30px; top: 396px; width: 50px; height: 50px; z-index: 41; cursor: pointer; overflow: visible; pointer-events: none;",
+	cssClasses:	"",
+	htmlId:		"tobj3783",
+	bInsAnc:	1,
+	cwObj:		{
+		"name":	"Button previous",
+		"arChld":
+	[
+		{type:6,on:11,delay:0,name:'OnPageShowShowIfPageInSection=Not 1',actItem:function(){ if(!VarPageInSection.equals('1'))textbutton3783.show(); else if(typeof pF == 'function') pF();
+    if(typeof pF == 'function') pF(); }},
+		{type:6,on:2,delay:0,name:'OnMClkGoToPrevOrMenu',actItem:function(){ if(!VarPageInSection.equals('1'))trivExitPage('zk_systemen_hoofdstukken_toets_vragen_vraag_2.html',false,false);else trivExitPage('trivMailTo(\'\')',true,false);
+    if(typeof pF == 'function') pF();
+    if(typeof pF == 'function') pF(); }}
+	]
+	},
+	objData:	{"a":[36,33216,[34,0,7,0,200,0],[29.99999999999997,396,50,50]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":30,"y":396,"width":50,"height":50},"imgDataNormal":"images/desktop_shape3783.png","imgDataOver":"images/desktop_shape3783_over.png","imgDataDown":"images/desktop_shape3783.png","imgDataDisabled":"images/desktop_shape3783_disabled.png","svgDataNormal":"<g transform=\"translate(25 25)\" style=\"\">\n\t<path d=\"M 0 0 L 50 0 L 50 50 L 0 50 L 0 0 Z\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity: 0; fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-25, -25) \" stroke-linecap=\"round\"></path>\n\t<pattern id=\"SVGID_4156_3809_16971\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n<image x=\"0\" y=\"0\" width=\"50\" height=\"50\" xlink:href=\"images/Button_vorige50.png\" preserveAspectRatio=\"none\"></image>\n</pattern>\n<path d=\"M 0 0 L 50 0 L 50 50 L 0 50 L 0 0\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: url(&quot;#SVGID_4156_3809_16971&quot;); fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-25, -25) \" stroke-linecap=\"round\"></path>\n</g>\n\t<g transform=\"translate(25 25)\">\n\t\t<text font-family=\"Lucida Sans Unicode\" font-size=\"-21.3333328\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\">\n\t\t\t<tspan x=\"0\" y=\"-6.72\" fill=\"#FFFFFF\"></tspan>\n\t\t</text>\n\t</g>\n","svgDataOver":"<g transform=\"translate(25 25)\" style=\"\">\n\t<path d=\"M 0 0 L 50 0 L 50 50 L 0 50 L 0 0 Z\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity: 0; fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-25, -25) \" stroke-linecap=\"round\"></path>\n\t<pattern id=\"SVGID_4156_3809_16973\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n<image x=\"0\" y=\"0\" width=\"50\" height=\"50\" xlink:href=\"images/Button_vorige_hover50.png\" preserveAspectRatio=\"none\"></image>\n</pattern>\n<path d=\"M 0 0 L 50 0 L 50 50 L 0 50 L 0 0\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: url(&quot;#SVGID_4156_3809_16973&quot;); fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-25, -25) \" stroke-linecap=\"round\"></path>\n</g>\n\t<g transform=\"translate(25 25)\">\n\t\t<text font-family=\"Lucida Sans Unicode\" font-size=\"-21.3333328\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\">\n\t\t\t<tspan x=\"0\" y=\"-6.72\" fill=\"#FFFFFF\"></tspan>\n\t\t</text>\n\t</g>\n","svgDataDown":"<g transform=\"translate(25 25)\" style=\"\">\n\t<path d=\"M 0 0 L 50 0 L 50 50 L 0 50 L 0 0 Z\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity: 0; fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-25, -25) \" stroke-linecap=\"round\"></path>\n\t<pattern id=\"SVGID_4156_3809_16975\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n<image x=\"0\" y=\"0\" width=\"50\" height=\"50\" xlink:href=\"images/Button_vorige50.png\" preserveAspectRatio=\"none\"></image>\n</pattern>\n<path d=\"M 0 0 L 50 0 L 50 50 L 0 50 L 0 0\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: url(&quot;#SVGID_4156_3809_16975&quot;); fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-25, -25) \" stroke-linecap=\"round\"></path>\n</g>\n\t<g transform=\"translate(25 25)\">\n\t\t<text font-family=\"Lucida Sans Unicode\" font-size=\"-21.3333328\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\">\n\t\t\t<tspan x=\"0\" y=\"-6.72\" fill=\"#FFFFFF\"></tspan>\n\t\t</text>\n\t</g>\n","svgDataDisabled":"<g transform=\"translate(25 25)\" style=\"\">\n\t<path d=\"M 0 0 L 50 0 L 50 50 L 0 50 L 0 0 Z\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity: 0; fill-rule: nonzero; opacity: 0; pointer-events: auto;\" transform=\"translate(0 0) translate(-25, -25) \" stroke-linecap=\"round\"></path>\n\t<pattern id=\"SVGID_4156_3809_16977\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n<image x=\"0\" y=\"0\" width=\"50\" height=\"50\" xlink:href=\"images/Button_vorige50.png\" preserveAspectRatio=\"none\"></image>\n</pattern>\n<path d=\"M 0 0 L 50 0 L 50 50 L 0 50 L 0 0\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: url(&quot;#SVGID_4156_3809_16977&quot;); fill-rule: nonzero; opacity: 0; pointer-events: auto;\" transform=\"translate(0 0) translate(-25, -25) \" stroke-linecap=\"round\"></path>\n</g>\n\t<g transform=\"translate(25 25)\">\n\t\t<text font-family=\"Lucida Sans Unicode\" font-size=\"-21.3333328\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 0;\">\n\t\t\t<tspan x=\"0\" y=\"-6.72\" fill=\"#FFFFFF\"></tspan>\n\t\t</text>\n\t</g>\n","btnState":"enabled","fallbackImg":"<img alt=\"\" title=\"\" style=\"position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;\">"}
+};
+textbutton3786.rcdData.att_Desktop = 
+{
+	innerHtml:	"<svg viewBox=\"0 0 50 50\" preserveAspectRatio=\"none\" focusable=\"false\" style=\"pointer-events: none; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;\" aria-hidden=\"true\"><g transform=\"translate(25 25)\" style=\"\">\n	<path d=\"M 0 0 L 50 0 L 50 50 L 0 50 L 0 0 Z\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity:0;filter:alpha(opacity=0); fill-rule: nonzero; opacity:1;filter:alpha(opacity=100); pointer-events: auto;\" transform=\"translate(0 0) translate(-25, -25) \" stroke-linecap=\"round\"></path>\n	<pattern id=\"SVGID_4156_3809_16979\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n<image x=\"0\" y=\"0\" width=\"50\" height=\"50\" xlink:href=\"images/Button_volgende50.png\" preserveAspectRatio=\"none\"></image>\n</pattern>\n<path d=\"M 0 0 L 50 0 L 50 50 L 0 50 L 0 0\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: url(&quot;#SVGID_4156_3809_16979&quot;); fill-rule: nonzero; opacity:1;filter:alpha(opacity=100); pointer-events: auto;\" transform=\"translate(0 0) translate(-25, -25) \" stroke-linecap=\"round\"></path>\n</g>\n	<g transform=\"translate(25 25)\">\n		<text font-family=\"Lucida Sans Unicode\" font-size=\"-21.3333328\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity:1;filter:alpha(opacity=100);\">\n			<tspan x=\"0\" y=\"-6.72\" fill=\"#FFFFFF\"></tspan>\n		</text>\n	</g>\n</svg>",
+	cssText:	"visibility: hidden; position: absolute; left: 1286px; top: 396px; width: 50px; height: 50px; z-index: 42; cursor: pointer; overflow: visible; pointer-events: none;",
+	cssClasses:	"",
+	htmlId:		"tobj3786",
+	bInsAnc:	1,
+	cwObj:		{
+		"name":	"Button next",
+		"arChld":
+	[
+		{type:6,on:2,delay:0,name:'OnMClkGoToNextOrMenu',actItem:function(){ if(!VarPageInSection.equals('' +  VarPagesInSection.getValueForDisplay() + ''))trivExitPage('zk_systemen_hoofdstukken_toets_vragen_vraag_4.html',true,false);else trivExitPage('zk_systemen_hoofdmenu_hoofdmenu.html',true,false);
+    if(typeof pF == 'function') pF();
+    if(typeof pF == 'function') pF(); }}
+	]
+	},
+	objData:	{"a":[4,33216,0,[1286,396,50,50]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":1286,"y":396,"width":50,"height":50},"imgDataNormal":"images/desktop_shape3786.png","imgDataOver":"images/desktop_shape3786_over.png","imgDataDown":"images/desktop_shape3786.png","imgDataDisabled":"images/desktop_shape3786_disabled.png","svgDataNormal":"<g transform=\"translate(25 25)\" style=\"\">\n\t<path d=\"M 0 0 L 50 0 L 50 50 L 0 50 L 0 0 Z\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity: 0; fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-25, -25) \" stroke-linecap=\"round\"></path>\n\t<pattern id=\"SVGID_4156_3809_16979\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n<image x=\"0\" y=\"0\" width=\"50\" height=\"50\" xlink:href=\"images/Button_volgende50.png\" preserveAspectRatio=\"none\"></image>\n</pattern>\n<path d=\"M 0 0 L 50 0 L 50 50 L 0 50 L 0 0\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: url(&quot;#SVGID_4156_3809_16979&quot;); fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-25, -25) \" stroke-linecap=\"round\"></path>\n</g>\n\t<g transform=\"translate(25 25)\">\n\t\t<text font-family=\"Lucida Sans Unicode\" font-size=\"-21.3333328\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\">\n\t\t\t<tspan x=\"0\" y=\"-6.72\" fill=\"#FFFFFF\"></tspan>\n\t\t</text>\n\t</g>\n","svgDataOver":"<g transform=\"translate(25 25)\" style=\"\">\n\t<path d=\"M 0 0 L 50 0 L 50 50 L 0 50 L 0 0 Z\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity: 0; fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-25, -25) \" stroke-linecap=\"round\"></path>\n\t<pattern id=\"SVGID_4156_3809_16981\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n<image x=\"0\" y=\"0\" width=\"50\" height=\"50\" xlink:href=\"images/Button_volgende_hover50.png\" preserveAspectRatio=\"none\"></image>\n</pattern>\n<path d=\"M 0 0 L 50 0 L 50 50 L 0 50 L 0 0\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: url(&quot;#SVGID_4156_3809_16981&quot;); fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-25, -25) \" stroke-linecap=\"round\"></path>\n</g>\n\t<g transform=\"translate(25 25)\">\n\t\t<text font-family=\"Lucida Sans Unicode\" font-size=\"-21.3333328\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\">\n\t\t\t<tspan x=\"0\" y=\"-6.72\" fill=\"#FFFFFF\"></tspan>\n\t\t</text>\n\t</g>\n","svgDataDown":"<g transform=\"translate(25 25)\" style=\"\">\n\t<path d=\"M 0 0 L 50 0 L 50 50 L 0 50 L 0 0 Z\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity: 0; fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-25, -25) \" stroke-linecap=\"round\"></path>\n\t<pattern id=\"SVGID_4156_3809_16983\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n<image x=\"0\" y=\"0\" width=\"50\" height=\"50\" xlink:href=\"images/Button_volgende50.png\" preserveAspectRatio=\"none\"></image>\n</pattern>\n<path d=\"M 0 0 L 50 0 L 50 50 L 0 50 L 0 0\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: url(&quot;#SVGID_4156_3809_16983&quot;); fill-rule: nonzero; opacity: 1; pointer-events: auto;\" transform=\"translate(0 0) translate(-25, -25) \" stroke-linecap=\"round\"></path>\n</g>\n\t<g transform=\"translate(25 25)\">\n\t\t<text font-family=\"Lucida Sans Unicode\" font-size=\"-21.3333328\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\">\n\t\t\t<tspan x=\"0\" y=\"-6.72\" fill=\"#FFFFFF\"></tspan>\n\t\t</text>\n\t</g>\n","svgDataDisabled":"<g transform=\"translate(25 25)\" style=\"\">\n\t<path d=\"M 0 0 L 50 0 L 50 50 L 0 50 L 0 0 Z\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity: 0; fill-rule: nonzero; opacity: 0.3; pointer-events: auto;\" transform=\"translate(0 0) translate(-25, -25) \" stroke-linecap=\"round\"></path>\n\t<pattern id=\"SVGID_4156_3809_16985\" x=\"0\" y=\"0\" width=\"1\" height=\"1\">\n<image x=\"0\" y=\"0\" width=\"50\" height=\"50\" xlink:href=\"images/Button_volgende50.png\" preserveAspectRatio=\"none\"></image>\n</pattern>\n<path d=\"M 0 0 L 50 0 L 50 50 L 0 50 L 0 0\" style=\"stroke: rgb(9, 99, 177); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: url(&quot;#SVGID_4156_3809_16985&quot;); fill-rule: nonzero; opacity: 0.3; pointer-events: auto;\" transform=\"translate(0 0) translate(-25, -25) \" stroke-linecap=\"round\"></path>\n</g>\n\t<g transform=\"translate(25 25)\">\n\t\t<text font-family=\"Lucida Sans Unicode\" font-size=\"-21.3333328\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 0.3;\">\n\t\t\t<tspan x=\"0\" y=\"-6.72\" fill=\"#FFFFFF\"></tspan>\n\t\t</text>\n\t</g>\n","btnState":"enabled","fallbackImg":"<img alt=\"\" title=\"\" style=\"position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;\">"}
+};
+text3788.rcdData.att_Desktop = 
+{
+	innerHtml:	"",
+	cssText:	"visibility: inherit; position: absolute; left: 1383px; top: 157px; width: 196px; height: 509px; z-index: 14; cursor: pointer;",
+	cssClasses:	"",
+	htmlId:		"tobj3788",
+	bInsAnc:	1,
+	cwObj:		{
+		"name":	"VARS",
+		"arChld":
+	[
+		{type:6,on:2,delay:0,name:'OnMClkChange',actItem:function(){ if( text3788.eatOnUp==true ){
+        text3788.eatOnUp=false;
+        return;
+    }
+    text3788.changeContents( "ToetsVraag01 = " +  VarToetsVraag01.getValueForDisplay() + "\nToetsVraag02 = " +  VarToetsVraag02.getValueForDisplay() + "\nToetsVraag03 = " +  VarToetsVraag03.getValueForDisplay() + "\nToetsVraag04 = " +  VarToetsVraag04.getValueForDisplay() + "\n\nToetsGoTo = " +  VarToetsGoTo.getValueForDisplay() + "\n\nprogress = " +  VarQuestion_62679.getValueForDisplay() + "\n\nToetsScore = " +  VarToetsScore.getValueForDisplay() + "\n\nAICC_Lesson_Status = " +  AICC_Lesson_Status.getValueForDisplay() + "" ); 
+    if(typeof pF == 'function') pF(); }},
+		{type:6,on:5,delay:0,name:'OnShowChange',actItem:function(){ text3788.changeContents( "ToetsVraag01 = " +  VarToetsVraag01.getValueForDisplay() + "\nToetsVraag02 = " +  VarToetsVraag02.getValueForDisplay() + "\nToetsVraag03 = " +  VarToetsVraag03.getValueForDisplay() + "\nToetsVraag04 = " +  VarToetsVraag04.getValueForDisplay() + "\n\nToetsGoTo = " +  VarToetsGoTo.getValueForDisplay() + "\n\nprogress = " +  VarQuestion_62679.getValueForDisplay() + "\n\nToetsScore = " +  VarToetsScore.getValueForDisplay() + "\n\nAICC_Lesson_Status = " +  AICC_Lesson_Status.getValueForDisplay() + "" ); 
+    if(typeof pF == 'function') pF(); }}
+	]
+	},
+	objData:	{"a":[36,32,0,[1383,157,196,509]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":1383,"y":157,"width":196,"height":509},"dwTextFlags":0,"marginSize":20,"textPublishLang":"Inherit"}
+};
+og3791.rcdData.att_Desktop = 
+{
+	innerHtml:	"",
+	cssText:	"",
+	cssClasses:	"",
+	htmlId:		"og3791",
+	bInsAnc:	undefined,
+	objData:	{"a":[0,32,0,[]],"bReadLast":false}
+};
+og3830.rcdData.att_Desktop = 
+{
+	innerHtml:	"",
+	cssText:	"",
+	cssClasses:	"",
+	htmlId:		"og3830",
+	bInsAnc:	undefined,
+	objData:	{"a":[0,32,0,[]],"bReadLast":false}
+};
+og3835.rcdData.att_Desktop = 
+{
+	innerHtml:	"",
+	cssText:	"",
+	cssClasses:	"",
+	htmlId:		"og3835",
+	bInsAnc:	undefined,
+	objData:	{"a":[0,32,0,[]],"bReadLast":false}
+};
+og3848.rcdData.att_Desktop = 
+{
+	innerHtml:	"",
+	cssText:	"",
+	cssClasses:	"",
+	htmlId:		"og3848",
+	bInsAnc:	undefined,
+	objData:	{"a":[0,32,0,[]],"bReadLast":false}
+};
+image3849.rcdData.att_Desktop = 
+{
+	innerHtml:	"<img id=\"tobj3849Img\" src=\"images/progress_cirkel_trans.png\" style=\"position: absolute; border-style: none; left: 0px; top: 0px; width: 34px; height: 34px;\">",
+	cssText:	"visibility: inherit; position: absolute; left: 540px; top: 719px; width: 34px; height: 34px; z-index: 15;",
+	cssClasses:	"",
+	htmlId:		"tobj3849",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"cirkel1",
+		"arChld":
+	[
+		{type:6,on:11,delay:0,name:'OnPageShowChange',actItem:function(){ if(VarPageInSection.equals('1'))image3849.changeContents( "images/progress_cirkel.png" ); else if(typeof pF == 'function') pF();
+    if(typeof pF == 'function') pF(); }}
+	]
+	},
+	objData:	{"a":[0,288,0,[540,719,34,34]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":540,"y":719,"width":34,"height":34}}
+};
+image3851.rcdData.att_Desktop = 
+{
+	innerHtml:	"<img id=\"tobj3851Img\" src=\"images/progress_cirkel_trans.png\" style=\"position: absolute; border-style: none; left: 0px; top: 0px; width: 34px; height: 34px;\">",
+	cssText:	"visibility: inherit; position: absolute; left: 590px; top: 719px; width: 34px; height: 34px; z-index: 16;",
+	cssClasses:	"",
+	htmlId:		"tobj3851",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"cirkel2",
+		"arChld":
+	[
+		{type:6,on:11,delay:0,name:'OnPageShowChange',actItem:function(){ if(VarPageInSection.equals('2'))image3851.changeContents( "images/progress_cirkel.png" ); else if(typeof pF == 'function') pF();
+    if(typeof pF == 'function') pF(); }}
+	]
+	},
+	objData:	{"a":[0,288,0,[590,719,34,34]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":590,"y":719,"width":34,"height":34}}
+};
+image3853.rcdData.att_Desktop = 
+{
+	innerHtml:	"<img id=\"tobj3853Img\" src=\"images/progress_cirkel_trans.png\" style=\"position: absolute; border-style: none; left: 0px; top: 0px; width: 34px; height: 34px;\">",
+	cssText:	"visibility: inherit; position: absolute; left: 640px; top: 719px; width: 34px; height: 34px; z-index: 17;",
+	cssClasses:	"",
+	htmlId:		"tobj3853",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"cirkel3",
+		"arChld":
+	[
+		{type:6,on:11,delay:0,name:'OnPageShowChange',actItem:function(){ if(VarPageInSection.equals('3'))image3853.changeContents( "images/progress_cirkel.png" ); else if(typeof pF == 'function') pF();
+    if(typeof pF == 'function') pF(); }}
+	]
+	},
+	objData:	{"a":[0,288,0,[640,719,34,34]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":640,"y":719,"width":34,"height":34}}
+};
+image3855.rcdData.att_Desktop = 
+{
+	innerHtml:	"<img id=\"tobj3855Img\" src=\"images/progress_cirkel_trans.png\" style=\"position: absolute; border-style: none; left: 0px; top: 0px; width: 34px; height: 34px;\">",
+	cssText:	"visibility: inherit; position: absolute; left: 690px; top: 719px; width: 34px; height: 34px; z-index: 18;",
+	cssClasses:	"",
+	htmlId:		"tobj3855",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"cirkel4",
+		"arChld":
+	[
+		{type:6,on:11,delay:0,name:'OnPageShowChange',actItem:function(){ if(VarPageInSection.equals('4'))image3855.changeContents( "images/progress_cirkel.png" ); else if(typeof pF == 'function') pF();
+    if(typeof pF == 'function') pF(); }}
+	]
+	},
+	objData:	{"a":[0,288,0,[690,719,34,34]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":690,"y":719,"width":34,"height":34}}
+};
+image4391.rcdData.att_Desktop = 
+{
+	innerHtml:	"<img id=\"tobj4391Img\" src=\"images/progress_cirkel_trans.png\" style=\"position: absolute; border-style: none; left: 0px; top: 0px; width: 34px; height: 34px;\">",
+	cssText:	"visibility: inherit; position: absolute; left: 740px; top: 719px; width: 34px; height: 34px; z-index: 19;",
+	cssClasses:	"",
+	htmlId:		"tobj4391",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"cirkel5",
+		"arChld":
+	[
+		{type:6,on:11,delay:0,name:'OnPageShowChange',actItem:function(){ if(VarPageInSection.equals('5'))image4391.changeContents( "images/progress_cirkel.png" ); else if(typeof pF == 'function') pF();
+    if(typeof pF == 'function') pF(); }}
+	]
+	},
+	objData:	{"a":[0,288,0,[740,719,34,34]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":740,"y":719,"width":34,"height":34}}
+};
+image4396.rcdData.att_Desktop = 
+{
+	innerHtml:	"<img id=\"tobj4396Img\" src=\"images/progress_cirkel_trans.png\" style=\"position: absolute; border-style: none; left: 0px; top: 0px; width: 34px; height: 34px;\">",
+	cssText:	"visibility: inherit; position: absolute; left: 790px; top: 719px; width: 34px; height: 34px; z-index: 20;",
+	cssClasses:	"",
+	htmlId:		"tobj4396",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"cirkel6",
+		"arChld":
+	[
+		{type:6,on:11,delay:0,name:'OnPageShowChange',actItem:function(){ if(VarPageInSection.equals('6'))image4396.changeContents( "images/progress_cirkel.png" ); else if(typeof pF == 'function') pF();
+    if(typeof pF == 'function') pF(); }}
+	]
+	},
+	objData:	{"a":[0,288,0,[790,719,34,34]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":790,"y":719,"width":34,"height":34}}
+};
+image3857.rcdData.att_Desktop = 
+{
+	innerHtml:	"<img id=\"tobj3857Img\" src=\"images/progress_trans.png\" style=\"position: absolute; border-style: none; left: 0px; top: 0px; width: 22px; height: 22px;\">",
+	cssText:	"visibility: inherit; position: absolute; left: 546px; top: 725px; width: 22px; height: 22px; z-index: 21;",
+	cssClasses:	"",
+	htmlId:		"tobj3857",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"Bolletje1"
+	},
+	objData:	{"a":[0,288,0,[546,725,22,22]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":546,"y":725,"width":22,"height":22}}
+};
+image3858.rcdData.att_Desktop = 
+{
+	innerHtml:	"<img id=\"tobj3858Img\" src=\"images/progress_trans.png\" style=\"position: absolute; border-style: none; left: 0px; top: 0px; width: 22px; height: 22px;\">",
+	cssText:	"visibility: inherit; position: absolute; left: 596px; top: 725px; width: 22px; height: 22px; z-index: 22;",
+	cssClasses:	"",
+	htmlId:		"tobj3858",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"Bolletje2"
+	},
+	objData:	{"a":[0,288,0,[596,725,22,22]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":596,"y":725,"width":22,"height":22}}
+};
+image3859.rcdData.att_Desktop = 
+{
+	innerHtml:	"<img id=\"tobj3859Img\" src=\"images/progress_trans.png\" style=\"position: absolute; border-style: none; left: 0px; top: 0px; width: 22px; height: 22px;\">",
+	cssText:	"visibility: inherit; position: absolute; left: 646px; top: 725px; width: 22px; height: 22px; z-index: 23;",
+	cssClasses:	"",
+	htmlId:		"tobj3859",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"Bolletje3"
+	},
+	objData:	{"a":[0,288,0,[646,725,22,22]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":646,"y":725,"width":22,"height":22}}
+};
+image3860.rcdData.att_Desktop = 
+{
+	innerHtml:	"<img id=\"tobj3860Img\" src=\"images/progress_trans.png\" style=\"position: absolute; border-style: none; left: 0px; top: 0px; width: 22px; height: 22px;\">",
+	cssText:	"visibility: inherit; position: absolute; left: 696px; top: 725px; width: 22px; height: 22px; z-index: 24;",
+	cssClasses:	"",
+	htmlId:		"tobj3860",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"Bolletje4"
+	},
+	objData:	{"a":[0,288,0,[696,725,22,22]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":696,"y":725,"width":22,"height":22}}
+};
+image4401.rcdData.att_Desktop = 
+{
+	innerHtml:	"<img id=\"tobj4401Img\" src=\"images/progress_trans.png\" style=\"position: absolute; border-style: none; left: 0px; top: 0px; width: 22px; height: 22px;\">",
+	cssText:	"visibility: inherit; position: absolute; left: 746px; top: 725px; width: 22px; height: 22px; z-index: 25;",
+	cssClasses:	"",
+	htmlId:		"tobj4401",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"Bolletje5"
+	},
+	objData:	{"a":[0,288,0,[746,725,22,22]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":746,"y":725,"width":22,"height":22}}
+};
+image4405.rcdData.att_Desktop = 
+{
+	innerHtml:	"<img id=\"tobj4405Img\" src=\"images/progress_trans.png\" style=\"position: absolute; border-style: none; left: 0px; top: 0px; width: 22px; height: 22px;\">",
+	cssText:	"visibility: inherit; position: absolute; left: 796px; top: 725px; width: 22px; height: 22px; z-index: 26;",
+	cssClasses:	"",
+	htmlId:		"tobj4405",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"Bolletje6"
+	},
+	objData:	{"a":[0,288,0,[796,725,22,22]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":796,"y":725,"width":22,"height":22}}
+};
+og4159.rcdData.att_Desktop = 
+{
+	innerHtml:	"",
+	cssText:	"",
+	cssClasses:	"",
+	htmlId:		"og4159",
+	bInsAnc:	undefined,
+	objData:	{"a":[0,32,0,[]],"bReadLast":false}
+};
+text4173.rcdData.att_Desktop = 
+{
+	innerHtml:	"<div name=\"dCon\" style=\"position: absolute; left: 0px; top: 0px; width: 343px; min-height: 62px;\"><div name=\"dCon2\" class=\"ttxt\" style=\"left: 0px; top: 0px; width: 343px; min-height: 62px;\"><p align=\"left\" style=\"margin-left:0px;text-indent:0px;margin-top:0px;margin-bottom:0px;\"><strong><span style=\"font-size:22pt; font-family: &quot;Titillium Web&quot;, sans-serif; color: rgb(0, 40, 87);\">Vraag 3</span></strong></p></div></div>",
+	cssText:	"visibility: inherit; position: absolute; left: 288px; top: 156px; width: 343px; height: 62px; z-index: 27;",
+	cssClasses:	"page-title",
+	htmlId:		"tobj4173",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"Titel"
+	},
+	objData:	{"a":[0,32,0,[288,156,343,62]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":288,"y":156,"width":343,"height":62},"dwTextFlags":0,"marginSize":0,"textPublishLang":"Inherit"}
+};
+text4174.rcdData.att_Desktop = 
+{
+	innerHtml:	"<div name=\"dCon\" style=\"position: absolute; left: 0px; top: 0px; width: 627px; min-height: 98px;\"><div name=\"dCon2\" class=\"ttxt\" style=\"left: 0px; top: 0px; width: 627px; min-height: 98px;\"><p align=\"left\" leglh=\"1.661\" style=\"margin-left:0px;text-indent:0px;line-height:1.660;margin-top:0px;margin-bottom:0px;\"><span style=\"color: rgb(0, 40, 87); font-size:13pt; font-family: &quot;PT Sans&quot;, &quot;PT Sans&quot;;\">Bastiaan belt. Hij ziet dat de toegang tot Mijn Zilveren Kruis beveiligd is. </span></p>\n\n<p align=\"left\" leglh=\"1.661\" style=\"margin-left:0px;text-indent:0px;line-height:1.660;margin-top:0px;margin-bottom:0px;\"><span style=\"color: rgb(0, 40, 87); font-size:13pt; font-family: &quot;PT Sans&quot;, &quot;PT Sans&quot;;\">​</span></p>\n\n<p align=\"left\" leglh=\"1.661\" style=\"margin-left:0px;text-indent:0px;line-height:1.660;margin-top:0px;margin-bottom:0px;\"><span><strong><span style=\"color: rgb(0, 40, 87); font-size:13pt; font-family: &quot;PT Sans&quot;, &quot;PT Sans&quot;;\">Hoe kan Bastiaan inloggen op Mijn Zilveren Kruis? </span></strong><span style=\"color: rgb(0, 40, 87); font-family: &quot;PT Sans&quot;, sans-serif; font-size:13pt;\"> </span></span></p></div></div>",
+	cssText:	"visibility: inherit; position: absolute; left: 288px; top: 220px; width: 627px; height: 98px; z-index: 28;",
+	cssClasses:	"body-txt",
+	htmlId:		"tobj4174",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	">>>Vraag"
+	},
+	objData:	{"a":[0,32,0,[288,220,627,98]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":288,"y":220,"width":627,"height":98},"dwTextFlags":0,"marginSize":0,"textPublishLang":"Inherit"}
+};
+og4175.rcdData.att_Desktop = 
+{
+	innerHtml:	"",
+	cssText:	"",
+	cssClasses:	"",
+	htmlId:		"og4175",
+	bInsAnc:	undefined,
+	objData:	{"a":[0,32,0,[]],"bReadLast":false}
+};
+text4176.rcdData.att_Desktop = 
+{
+	innerHtml:	"<div name=\"dCon\" style=\"position: absolute; left: 0px; top: 0px; cursor: pointer; width: 785px; height: 80px; background-color: rgb(214, 239, 240);\"><div name=\"dCon2\" class=\"ttxt\" style=\"left: 0px; top: 0px; width: 785px; height: 80px;\"><table border=\"0px\" cellpadding=\"0px\" cellspacing=\"0px\">\n	<tbody>\n		<tr valign=\"top\">\n			<td style=\"padding: 0px 4px; width: 785px; vertical-align: middle; height: 80px; border-width: 0px; border-style: solid;\">\n			<p><span style=\"font-size:13pt; color: rgb(0, 104, 189); font-family: &quot;PT sans&quot;, sans-serif;\">Met zijn burgerservicenummer</span></p>\n			</td>\n		</tr>\n	</tbody>\n</table></div></div>",
+	cssText:	"visibility: inherit; position: absolute; left: 286px; top: 323px; width: 785px; height: 80px; z-index: 29; cursor: pointer;",
+	cssClasses:	"Antwoord_A answerToetsVraag-notselected-small",
+	htmlId:		"tobj4176",
+	bInsAnc:	1,
+	cwObj:		{
+		"name":	">>>Antwoord_A",
+		"arChld":
+	[
+		{type:6,on:2,delay:0,name:'OnMClkModVarSaveAnswer',actItem:function(){ if( text4176.eatOnUp==true ){
+        text4176.eatOnUp=false;
+        return;
+    }
+    VarQuestion_4201.set('A'); 
+    if(typeof pF == 'function') pF(); }},
+		{type:6,on:2,delay:0,name:'OnMClkChangeColor_A',actItem:function(){ if( text4176.eatOnUp==true ){
+        text4176.eatOnUp=false;
+        return;
+    }
+    if(VarCorrectAnswer.equals('A'))runJS4178();else runJSElse4178();
+    if(typeof pF == 'function') pF();
+    if(typeof pF == 'function') pF(); }},
+		{type:6,on:2,delay:0,name:'OnMClkChange_VX_A',actItem:function(){ if( text4176.eatOnUp==true ){
+        text4176.eatOnUp=false;
+        return;
+    }
+    if(VarCorrectAnswer.equals('A'))image4197.changeContents( "images/check_v.png" ); else image4197.changeContents( "images/check_x.png" ); 
+    if(typeof pF == 'function') pF();
+    if(typeof pF == 'function') pF(); }},
+		{type:6,on:2,delay:0,name:'OnMClkRunActGrpAfrondingVraag',actItem:function(){ if( text4176.eatOnUp==true ){
+        text4176.eatOnUp=false;
+        return;
+    }
+    {og4159.issueActions(1001);}
+    if(typeof pF == 'function') pF(); }}
+	]
+	},
+	objData:	{"a":[4,32,0,[286,323,785,80]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":286,"y":323,"width":785,"height":80},"dwTextFlags":0,"marginSize":0,"textPublishLang":"Inherit"}
+};
+text4181.rcdData.att_Desktop = 
+{
+	innerHtml:	"<div name=\"dCon\" style=\"position: absolute; left: 0px; top: 0px; cursor: pointer; width: 785px; height: 80px; background-color: rgb(214, 239, 240);\"><div name=\"dCon2\" class=\"ttxt\" style=\"left: 0px; top: 0px; width: 785px; height: 80px;\"><table border=\"0px\" cellpadding=\"0px\" cellspacing=\"0px\">\n	<tbody>\n		<tr valign=\"top\">\n			<td style=\"padding: 0px 4px; width: 785px; vertical-align: middle; height: 80px; border-width: 0px; border-style: solid;\">\n			<p><span style=\"font-size:13pt; color: rgb(0, 104, 189); font-family: &quot;PT sans&quot;, sans-serif;\">Met zijn DigiD en SMS-controle</span></p>\n			</td>\n		</tr>\n	</tbody>\n</table></div></div>",
+	cssText:	"visibility: inherit; position: absolute; left: 286px; top: 415px; width: 785px; height: 80px; z-index: 30; cursor: pointer;",
+	cssClasses:	"Antwoord_B answerToetsVraag-notselected-small",
+	htmlId:		"tobj4181",
+	bInsAnc:	1,
+	cwObj:		{
+		"name":	">>>Antwoord_B",
+		"arChld":
+	[
+		{type:6,on:2,delay:0,name:'OnMClkModVarSaveAnswer',actItem:function(){ if( text4181.eatOnUp==true ){
+        text4181.eatOnUp=false;
+        return;
+    }
+    VarQuestion_4201.set('B'); 
+    if(typeof pF == 'function') pF(); }},
+		{type:6,on:2,delay:0,name:'OnMClkChangeColor_B',actItem:function(){ if( text4181.eatOnUp==true ){
+        text4181.eatOnUp=false;
+        return;
+    }
+    if(VarCorrectAnswer.equals('B'))runJS4183();else runJSElse4183();
+    if(typeof pF == 'function') pF();
+    if(typeof pF == 'function') pF(); }},
+		{type:6,on:2,delay:0,name:'OnMClkChange_VX_B',actItem:function(){ if( text4181.eatOnUp==true ){
+        text4181.eatOnUp=false;
+        return;
+    }
+    if(VarCorrectAnswer.equals('B'))image4198.changeContents( "images/check_v.png" ); else image4198.changeContents( "images/check_x.png" ); 
+    if(typeof pF == 'function') pF();
+    if(typeof pF == 'function') pF(); }},
+		{type:6,on:2,delay:0,name:'OnMClkRunActGrpAfrondingVraag',actItem:function(){ if( text4181.eatOnUp==true ){
+        text4181.eatOnUp=false;
+        return;
+    }
+    {og4159.issueActions(1001);}
+    if(typeof pF == 'function') pF(); }}
+	]
+	},
+	objData:	{"a":[4,32,0,[286,415,785,80]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":286,"y":415,"width":785,"height":80},"dwTextFlags":0,"marginSize":0,"textPublishLang":"Inherit"}
+};
+text4186.rcdData.att_Desktop = 
+{
+	innerHtml:	"<div name=\"dCon\" style=\"position: absolute; left: 0px; top: 0px; cursor: pointer; width: 785px; height: 80px; background-color: rgb(214, 239, 240);\"><div name=\"dCon2\" class=\"ttxt\" style=\"left: 0px; top: 0px; width: 785px; height: 80px;\"><table border=\"0px\" cellpadding=\"0px\" cellspacing=\"0px\">\n	<tbody>\n		<tr valign=\"top\">\n			<td style=\"padding: 0px 4px; width: 785px; vertical-align: middle; height: 80px; border-width: 0px; border-style: solid;\">\n			<p><span style=\"font-size:13pt; color: rgb(0, 104, 189); font-family: &quot;PT sans&quot;, sans-serif;\">Met de DigiD-app</span></p>\n			</td>\n		</tr>\n	</tbody>\n</table></div></div>",
+	cssText:	"visibility: inherit; position: absolute; left: 286px; top: 508px; width: 785px; height: 80px; z-index: 31; cursor: pointer;",
+	cssClasses:	"Antwoord_C answerToetsVraag-notselected-small",
+	htmlId:		"tobj4186",
+	bInsAnc:	1,
+	cwObj:		{
+		"name":	">>>Antwoord_C",
+		"arChld":
+	[
+		{type:6,on:2,delay:0,name:'OnMClkModVarSaveAnswer',actItem:function(){ if( text4186.eatOnUp==true ){
+        text4186.eatOnUp=false;
+        return;
+    }
+    VarQuestion_4201.set('C'); 
+    if(typeof pF == 'function') pF(); }},
+		{type:6,on:2,delay:0,name:'OnMClkChangeColor_C',actItem:function(){ if( text4186.eatOnUp==true ){
+        text4186.eatOnUp=false;
+        return;
+    }
+    if(VarCorrectAnswer.equals('C'))runJS4188();else runJSElse4188();
+    if(typeof pF == 'function') pF();
+    if(typeof pF == 'function') pF(); }},
+		{type:6,on:2,delay:0,name:'OnMClkChange_VX_C',actItem:function(){ if( text4186.eatOnUp==true ){
+        text4186.eatOnUp=false;
+        return;
+    }
+    if(VarCorrectAnswer.equals('C'))image4199.changeContents( "images/check_v.png" ); else image4199.changeContents( "images/check_x.png" ); 
+    if(typeof pF == 'function') pF();
+    if(typeof pF == 'function') pF(); }},
+		{type:6,on:2,delay:0,name:'OnMClkRunActGrpAfrondingVraag',actItem:function(){ if( text4186.eatOnUp==true ){
+        text4186.eatOnUp=false;
+        return;
+    }
+    {og4159.issueActions(1001);}
+    if(typeof pF == 'function') pF(); }}
+	]
+	},
+	objData:	{"a":[4,32,0,[286,508,785,80]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":286,"y":508,"width":785,"height":80},"dwTextFlags":0,"marginSize":0,"textPublishLang":"Inherit"}
+};
+text4191.rcdData.att_Desktop = 
+{
+	innerHtml:	"<div name=\"dCon\" style=\"position: absolute; left: 0px; top: 0px; cursor: pointer; width: 785px; height: 80px; background-color: rgb(214, 239, 240);\"><div name=\"dCon2\" class=\"ttxt\" style=\"left: 0px; top: 0px; width: 785px; height: 80px;\"><table border=\"0px\" cellpadding=\"0px\" cellspacing=\"0px\">\n	<tbody>\n		<tr valign=\"top\">\n			<td style=\"padding: 0px 4px; width: 785px; vertical-align: middle; height: 80px; border-width: 0px; border-style: solid;\">\n			<p><span style=\"font-size:13pt; color: rgb(0, 104, 189); font-family: &quot;PT sans&quot;, sans-serif;\">Met zijn relatienummer en geboortedatum</span></p>\n			</td>\n		</tr>\n	</tbody>\n</table></div></div>",
+	cssText:	"visibility: inherit; position: absolute; left: 287px; top: 601px; width: 785px; height: 80px; z-index: 32; cursor: pointer;",
+	cssClasses:	"Antwoord_D answerToetsVraag-notselected-small",
+	htmlId:		"tobj4191",
+	bInsAnc:	1,
+	cwObj:		{
+		"name":	">>>Antwoord_D",
+		"arChld":
+	[
+		{type:6,on:2,delay:0,name:'OnMClkModVarSaveAnswer',actItem:function(){ if( text4191.eatOnUp==true ){
+        text4191.eatOnUp=false;
+        return;
+    }
+    VarQuestion_4201.set('D'); 
+    if(typeof pF == 'function') pF(); }},
+		{type:6,on:2,delay:0,name:'OnMClkChangeColor_D',actItem:function(){ if( text4191.eatOnUp==true ){
+        text4191.eatOnUp=false;
+        return;
+    }
+    if(VarCorrectAnswer.equals('D'))runJS4193();else runJSElse4193();
+    if(typeof pF == 'function') pF();
+    if(typeof pF == 'function') pF(); }},
+		{type:6,on:2,delay:0,name:'OnMClkChange_VX_D',actItem:function(){ if( text4191.eatOnUp==true ){
+        text4191.eatOnUp=false;
+        return;
+    }
+    if(VarCorrectAnswer.equals('D'))image4200.changeContents( "images/check_v.png" ); else image4200.changeContents( "images/check_x.png" ); 
+    if(typeof pF == 'function') pF();
+    if(typeof pF == 'function') pF(); }},
+		{type:6,on:2,delay:0,name:'OnMClkRunActGrpAfrondingVraag',actItem:function(){ if( text4191.eatOnUp==true ){
+        text4191.eatOnUp=false;
+        return;
+    }
+    {og4159.issueActions(1001);}
+    if(typeof pF == 'function') pF(); }}
+	]
+	},
+	objData:	{"a":[4,32,0,[287,601,785,80]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":287,"y":601,"width":785,"height":80},"dwTextFlags":0,"marginSize":0,"textPublishLang":"Inherit"}
+};
+og4196.rcdData.att_Desktop = 
+{
+	innerHtml:	"",
+	cssText:	"",
+	cssClasses:	"",
+	htmlId:		"og4196",
+	bInsAnc:	undefined,
+	objData:	{"a":[0,32,0,[]],"bReadLast":false}
+};
+image4197.rcdData.att_Desktop = 
+{
+	innerHtml:	"<img id=\"tobj4197Img\" src=\"images/check_trans.png\" style=\"position: absolute; border-style: none; left: 0px; top: 0px; width: 54px; height: 90px;\">",
+	cssText:	"visibility: inherit; position: absolute; left: 222px; top: 318px; width: 54px; height: 90px; z-index: 33;",
+	cssClasses:	"",
+	htmlId:		"tobj4197",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"VX_A"
+	},
+	objData:	{"a":[0,288,0,[222,318,54,90]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":222,"y":318,"width":54,"height":90}}
+};
+image4198.rcdData.att_Desktop = 
+{
+	innerHtml:	"<img id=\"tobj4198Img\" src=\"images/check_trans.png\" style=\"position: absolute; border-style: none; left: 0px; top: 0px; width: 54px; height: 90px;\">",
+	cssText:	"visibility: inherit; position: absolute; left: 222px; top: 410px; width: 54px; height: 90px; z-index: 34;",
+	cssClasses:	"",
+	htmlId:		"tobj4198",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"VX_B"
+	},
+	objData:	{"a":[0,288,0,[222,410,54,90]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":222,"y":410,"width":54,"height":90}}
+};
+image4199.rcdData.att_Desktop = 
+{
+	innerHtml:	"<img id=\"tobj4199Img\" src=\"images/check_trans.png\" style=\"position: absolute; border-style: none; left: 0px; top: 0px; width: 54px; height: 90px;\">",
+	cssText:	"visibility: inherit; position: absolute; left: 222px; top: 502px; width: 54px; height: 90px; z-index: 35;",
+	cssClasses:	"",
+	htmlId:		"tobj4199",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"VX_C"
+	},
+	objData:	{"a":[0,288,0,[222,502,54,90]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":222,"y":502,"width":54,"height":90}}
+};
+image4200.rcdData.att_Desktop = 
+{
+	innerHtml:	"<img id=\"tobj4200Img\" src=\"images/check_trans.png\" style=\"position: absolute; border-style: none; left: 0px; top: 0px; width: 54px; height: 90px;\">",
+	cssText:	"visibility: inherit; position: absolute; left: 222px; top: 594px; width: 54px; height: 90px; z-index: 36;",
+	cssClasses:	"",
+	htmlId:		"tobj4200",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"VX_D"
+	},
+	objData:	{"a":[0,288,0,[222,594,54,90]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":222,"y":594,"width":54,"height":90}}
+};
+qu4201.rcdData.att_Desktop = 
+{
+	innerHtml:	"",
+	cssText:	"",
+	cssClasses:	"",
+	htmlId:		"qu4201",
+	bInsAnc:	undefined,
+	cwObj:		{
+				"crLineColor":	"",
+				"questType":	2,
+				"dwQuestFlags":	8,
+				"doImmFeedback":	0,
+				"maxAllowedAttempts":	0,
+				"arrAns":	["\\u0043\\u0068\\u006F\\u0069\\u0063\\u0065\\u0020\\u004F\\u006E\\u0065"],
+				"correctFeedbackFunc":	0,
+				"incorrectFeedbackFunc":	0,
+				"attemptsFeedbackFunc":	0,
+				"varQuest":	VarQuestion_4201
+	},
+	objData:	{"a":[0,32,0,[]]}
+};
+text4202.rcdData.att_Desktop = 
+{
+	innerHtml:	"<div name=\"dCon\" style=\"position: absolute; left: 0px; top: 0px; width: 113px; min-height: 20px;\"><legend><div name=\"dCon2\" class=\"ttxt\" style=\"left: 0px; top: 0px; width: 113px; min-height: 20px;\"><p align=\"left\"><span style=\"font-family:\'Arial\',sans-serif;color:#000000;font-size:12pt;\">Question Text</span></p></div></legend></div>",
+	cssText:	"visibility: inherit; position: absolute; left: 50px; top: -370px; width: 113px; height: 20px; z-index: 37;",
+	cssClasses:	"",
+	htmlId:		"tobj4202",
+	bInsAnc:	0,
+	fieldsetId:	'fset4201',
+	cwObj:		{
+		"name":	"Question Text"
+	},
+	objData:	{"a":[0,32,0,[50,-370,113,20]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":50,"y":-370,"width":113,"height":20},"dwTextFlags":0,"marginSize":0,"textPublishLang":"Inherit"}
+};
+text4203.rcdData.att_Desktop = 
+{
+	innerHtml:	"<div name=\"dCon\" style=\"position: absolute; left: 0px; top: 0px; width: 100px; min-height: 20px;\"><div name=\"dCon2\" class=\"ttxt\" style=\"left: 0px; top: 0px; width: 100px; min-height: 20px;\"><p align=\"left\"><span style=\"font-family:\'Arial\',sans-serif;color:#000000;font-size:12pt;\">Choice One</span></p></div></div>",
+	cssText:	"visibility: inherit; position: absolute; left: 79px; top: -340px; width: 100px; height: 20px; z-index: 38;",
+	cssClasses:	"",
+	htmlId:		"tobj4203",
+	bInsAnc:	0,
+	fieldsetId:	'fset4201',
+	cwObj:		{
+		"name":	"Choice 1 text"
+	},
+	objData:	{"a":[0,32,0,[79,-340,100,20]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":79,"y":-340,"width":100,"height":20},"dwTextFlags":0,"marginSize":0,"textPublishLang":"Inherit"}
+};
+radio4204.rcdData.att_Desktop = 
+{
+	innerHtml:	"<div style=\"white-space: nowrap; position: absolute; left: 0px; top: 0px; width: 19px; height: 19px;\"><input type=\"radio\" id=\"rad4204\" name=\"rad4201\" value=\"Choice One\" onclick=\"VarQuestion_4201.set(this.value);qu4201.questionUpdated();\" style=\"cursor: pointer; background-image: url(&quot;images/trivantis-blank.gif&quot;);\"></div>",
+	cssText:	"visibility: inherit; position: absolute; left: 50px; top: -339px; width: 19px; height: 19px; z-index: 39;",
+	cssClasses:	"",
+	htmlId:		"tobj4204",
+	bInsAnc:	0,
+	fieldsetId:	'fset4201',
+	cwObj:		{
+		"name":	"Choice 1 button"
+	},
+	objData:	{"a":[0,32,0,[50,-339,19,19]],"rcdOvr":{"res":0},"desktopRect":{"x":50,"y":-339,"width":19,"height":19},"formType":1,"dwFormFlags":0}
+};
+shape4205.rcdData.att_Desktop = 
+{
+	innerHtml:	"<svg viewBox=\"0 0 822 379\" preserveAspectRatio=\"none\" focusable=\"false\" style=\"pointer-events: none; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;\"><g transform=\"translate(411 189.5)\" style=\"\">\n	<path d=\"M 0 0 L 822 0 L 822 379 L 0 379 L 0 0 Z\" style=\"stroke: rgb(214, 239, 240); stroke-width: 0; stroke-dasharray: none; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-opacity:0;filter:alpha(opacity=0); fill-rule: nonzero; opacity:1;filter:alpha(opacity=100); pointer-events: auto;\" transform=\"translate(0 0) translate(-411, -189.5) \" stroke-linecap=\"round\"></path>\n</g>\n	<g transform=\"translate(411 189.5)\">\n		<text font-family=\"Lucida Sans Unicode\" font-size=\"-21.3333328\" font-weight=\"normal\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity:1;filter:alpha(opacity=100);\">\n			<tspan x=\"0\" y=\"-6.72\" fill=\"#FFFFFF\"></tspan>\n		</text>\n	</g>\n</svg>",
+	cssText:	"visibility: hidden; position: absolute; left: 269px; top: 313px; width: 822px; height: 379px; z-index: 40; overflow: visible; pointer-events: none;",
+	cssClasses:	"",
+	htmlId:		"tobj4205",
+	bInsAnc:	0,
+	cwObj:		{
+		"name":	"Disable pane"
+	},
+	objData:	{"a":[0,0,0,[268.99999999999994,313.0000000000001,822,379]],"rcdOvr":{"res":0},"borderEffect":{"outline":0,"outlineColor":"#000000","borderWeight":0,"lineStyle":0,"borderColor":"#000000"},"rotateEffect":{"angle":0,"anchorX":50,"anchorY":50},"desktopRect":{"x":269,"y":313,"width":822,"height":379},"btnState":"disabled","fallbackImg":"<img src=\"images/desktop_shape3944.png\" alt=\"\" title=\"\" style=\"position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;\">"}
+};
+rcdObj.rcdData.att_Desktop = 
+{
+	font:	{"bold":0,"italic":0,"underline":0,"size":"12","color":null,"bgColor":null,"name":"'Arial',sans-serif","lineHeight":"1.15","marginTop":"0px","marginBottom":"0px"},
+	pageIdx:	25
+};
+rcdObj.pgWidth_Desktop = pgWidth_desktop;
+rcdObj.preload_Desktop = ["images/Button_sluit_groot.png","images/Logo-ZK.jpg","images/Button_menu_groot.png","images/Button_vorige50.png","images/Button_vorige_hover50.png","images/Button_volgende50.png","images/Button_volgende_hover50.png","images/progress_0.png","images/progress_-1.png","images/progress_1.png","images/progress_cirkel_trans.png","images/progress_cirkel.png","images/progress_trans.png","images/check_v.png","images/check_x.png","images/check_trans.png"];
+rcdObj.pgStyle_Desktop = 'position: absolute; left: 0px; top: 0px; width: 1366px; height: 768px; overflow: hidden; visibility: hidden; background-size: auto;'
+rcdObj.backgrd_Desktop = ["#FFFFFF","",0,0,1];
