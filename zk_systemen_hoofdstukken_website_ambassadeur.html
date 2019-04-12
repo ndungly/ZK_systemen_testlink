@@ -347,8 +347,9 @@ donkerblauw #002857
 }
 
 .answerToetsVraag-right-small div {
+    border-radius: 6px !important;
     background: transparent !important !important;
-    background-color: transparent !important;
+    background-color: #4B973E !important;
  /*   cursor: default !important;*/
 }
     
@@ -371,8 +372,9 @@ donkerblauw #002857
 }
 
 .answerToetsVraag-wrong-small div {
+    border-radius: 6px !important;
     background: transparent !important !important;
-    background-color: transparent !important;
+    background-color: #DD1515 !important;
  /*   cursor: default !important;*/
 }
     
@@ -406,8 +408,13 @@ donkerblauw #002857
 .answerToetsVraag-notselected .ttxt {
 	box-shadow: 0px 2px #b1e0e2 !important;
     border-radius: 6px !important;
+    width: 785px !important;
 	height: 90px !important;
 	background-color: #D6EFF0 !important;
+}
+
+.answerToetsVraag-notselected .ttxt td {
+    width: 785px !important;
 }
 
 .answerToetsVraag-notselected p {
@@ -422,16 +429,22 @@ donkerblauw #002857
 }
 
 .answerToetsVraag-right div {
+    border-radius: 6px !important;
     background: transparent !important !important;
-    background-color: transparent !important;
+    background-color: #4B973E !important;
  /*   cursor: default !important;*/
 }
     
 .answerToetsVraag-right .ttxt {
 	box-shadow: 0px 2px #2d6024 !important;
     border-radius: 6px !important;
+    width: 785px !important;
 	height: 90px !important;
 	background-color: #4B973E !important;
+}
+
+.answerToetsVraag-right td {
+    width: 785px !important;
 }
 
 .answerToetsVraag-right p {
@@ -446,16 +459,22 @@ donkerblauw #002857
 }
 
 .answerToetsVraag-wrong div {
+    border-radius: 6px !important;
     background: transparent !important !important;
-    background-color: transparent !important;
+    background-color: #DD1515 !important;
  /*   cursor: default !important;*/
 }
     
 .answerToetsVraag-wrong .ttxt {
 	box-shadow: 0px 2px #9f0f0f !important;
     border-radius: 6px !important;
+    width: 785px !important;
 	height: 90px !important;
 	background-color: #DD1515 !important;
+}
+
+.answerToetsVraag-wrong td {
+    width: 785px !important;
 }
 
 .answerToetsVraag-wrong p {
@@ -482,6 +501,7 @@ donkerblauw #002857
 <script type='text/javascript' src='trivantis.js'></script>
 <script type='text/javascript' src='trivantis-cookie.js'></script>
 <script type='text/javascript' src='trivantis-timedate.js'></script>
+<script type='text/javascript' src='trivantis-trans.js'></script>
 <script type='text/javascript' src='trivantis-wndobj.js'></script>
 <script type='text/javascript' src='hammer.js'></script>
 <script>
@@ -563,6 +583,17 @@ function init_page()
 		trivPage.actionMute();
 	}
 }
+
+function finish() {
+    if (window.finishCalled) return;
+    window.finishCalled = true;
+    if( trivCompleteCnt > 0 ) trivExitPage( 'ObjLayerActionExit()', false );
+}
+
+window.onbeforeunload = function(){
+	if (!theApp.is.ie10orLess) finish();
+};
+window.onunload = finish;
 function trivPrevPage() {
     trivExitPage( 'zk_systemen_hoofdstukken_quiz_time_vraag_5.html', true )
 }
@@ -587,39 +618,48 @@ if( is.min ) {
 	var text2247 = new jsWndText(); //>>>Titel1
 	var text2246 = new jsWndText(); //>>>tekst
 	var image2240 = new jsWndImage(); //Tekstwolk1
-	var text2263 = new jsWndText(); //>>>tekst
+	var text2259 = new jsWndText(); //>>>tekst
 	var textbutton2251 = new jsWndTextButton(); //Button play 1
 	var image2242 = new jsWndImage(); //Tekstwolk2
-	var text2259 = new jsWndText(); //>>>tekst
+	var text2263 = new jsWndText(); //>>>tekst
 	var textbutton2267 = new jsWndTextButton(); //Button play 2
 	var image2244 = new jsWndImage(); //Tekstwolk3
 	var text2255 = new jsWndText(); //>>>tekst
 	var textbutton2271 = new jsWndTextButton(); //Button play 3
 	var image2237 = new jsWndImage(); //Website portret ambassadeur
 	var og2291 = new jsWndOther(); //Video 1
-	var video2294 = new jsWndVideo(); //Amb_Website_5392
+	var video2294 = new jsWndVideo(); //Amb_Website_5393_new3
+	var shape4959 = new jsWndShape(); //Rectangle1
+	var text4960 = new jsWndText(); //Naam1
+	var text4961 = new jsWndText(); //Functie1
 	var image2295 = new jsWndImage(); //Kruisje
 	var shape2292 = new jsWndShape(); //Click area
 	var og2283 = new jsWndOther(); //Video 2
-	var video2286 = new jsWndVideo(); //Amb_Website_5393
+	var video2286 = new jsWndVideo(); //Amb_Website_5392_new2
+	var shape4966 = new jsWndShape(); //Rectangle2
+	var text4968 = new jsWndText(); //Naam2
+	var text4967 = new jsWndText(); //Functie2
 	var image2287 = new jsWndImage(); //Kruisje
 	var shape2284 = new jsWndShape(); //Click area
 	var og2280 = new jsWndOther(); //Video 3
-	var video2275 = new jsWndVideo(); //Amb_Website_5389
+	var video2275 = new jsWndVideo(); //Amb_Website_5389_new2
+	var shape4977 = new jsWndShape(); //Rectangle3
+	var text4976 = new jsWndText(); //Naam3
+	var text4975 = new jsWndText(); //Functie3
 	var image2277 = new jsWndImage(); //Kruisje
 	var shape2279 = new jsWndShape(); //Click area
 	var textbutton235 = new jsWndTextButton(); //Volgende
 	og4.type=14;
-	og2291.arChld=[video2294,image2295,shape2292];
+	og2291.arChld=[video2294,shape4959,text4960,text4961,image2295,shape2292];
 	og2291.type=14;
-	og2283.arChld=[video2286,image2287,shape2284];
+	og2283.arChld=[video2286,shape4966,text4968,text4967,image2287,shape2284];
 	og2283.type=14;
-	og2280.arChld=[video2275,image2277,shape2279];
+	og2280.arChld=[video2275,shape4977,text4976,text4975,image2277,shape2279];
 	og2280.type=14;
 	var alertCtr = 0;
 	var trivPageId=56; //trivPage.id
-	var arWnds = [image84,text83,textbutton109,textbutton81,shape80,shape93,text97,shape2235,text2247,text2246,image2240,text2263,textbutton2251,image2242,text2259,textbutton2267,image2244,text2255,textbutton2271,image2237,video2294,image2295,shape2292,video2286,image2287,shape2284,video2275,image2277,shape2279,textbutton235];
-	var arAttachObj = [og4,image84,text83,textbutton109,textbutton81,shape80,shape93,text97,shape2235,text2247,text2246,image2240,text2263,textbutton2251,image2242,text2259,textbutton2267,image2244,text2255,textbutton2271,image2237,og2291,video2294,image2295,shape2292,og2283,video2286,image2287,shape2284,og2280,video2275,image2277,shape2279,textbutton235];
+	var arWnds = [image84,text83,textbutton109,textbutton81,shape80,shape93,text97,shape2235,text2247,text2246,image2240,text2259,textbutton2251,image2242,text2263,textbutton2267,image2244,text2255,textbutton2271,image2237,video2294,shape4959,text4960,text4961,image2295,shape2292,video2286,shape4966,text4968,text4967,image2287,shape2284,video2275,shape4977,text4976,text4975,image2277,shape2279,textbutton235];
+	var arAttachObj = [og4,image84,text83,textbutton109,textbutton81,shape80,shape93,text97,shape2235,text2247,text2246,image2240,text2259,textbutton2251,image2242,text2263,textbutton2267,image2244,text2255,textbutton2271,image2237,og2291,video2294,shape4959,text4960,text4961,image2295,shape2292,og2283,video2286,shape4966,text4968,text4967,image2287,shape2284,og2280,video2275,shape4977,text4976,text4975,image2277,shape2279,textbutton235];
 	var arPooledMedia = [];
 }
 /*! jQuery v3.3.1 | (c) JS Foundation and other contributors | jquery.org/license */

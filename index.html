@@ -18,18 +18,20 @@
 <script type='text/javascript' src='trivantis-cookie.js'></script>
 <script type='text/javascript' src='trivantis-pagePlayer.js'></script>
 <script type='text/javascript' src='trivantis-opautils.js'></script>
+<script type='text/javascript' src='trivantis-strings.js'></script>
 <script type="text/javascript">
 //<!-- 
 var pagePlayer = n;
 var indexHtmlName = "index.html";
 var firstPageName = "zk_systemen_titelpagina_s_titelpagina.html";
 var pooledAudioCnt = 0;
-var pooledVideoCnt = 0;
+var pooledVideoCnt = 1;
 var bAutoStartOnFirstPage = false;
 // -->
 
 </script>
 </head>
 <body onload="opaOnPageLoad()" onunload="opaOnUnload()">
+<div id="mediaPool" style="z-index: 0; visibility: hidden;"></div>
 </body>
 </html>

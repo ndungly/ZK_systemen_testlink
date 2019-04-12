@@ -347,8 +347,9 @@ donkerblauw #002857
 }
 
 .answerToetsVraag-right-small div {
+    border-radius: 6px !important;
     background: transparent !important !important;
-    background-color: transparent !important;
+    background-color: #4B973E !important;
  /*   cursor: default !important;*/
 }
     
@@ -371,8 +372,9 @@ donkerblauw #002857
 }
 
 .answerToetsVraag-wrong-small div {
+    border-radius: 6px !important;
     background: transparent !important !important;
-    background-color: transparent !important;
+    background-color: #DD1515 !important;
  /*   cursor: default !important;*/
 }
     
@@ -406,8 +408,13 @@ donkerblauw #002857
 .answerToetsVraag-notselected .ttxt {
 	box-shadow: 0px 2px #b1e0e2 !important;
     border-radius: 6px !important;
+    width: 785px !important;
 	height: 90px !important;
 	background-color: #D6EFF0 !important;
+}
+
+.answerToetsVraag-notselected .ttxt td {
+    width: 785px !important;
 }
 
 .answerToetsVraag-notselected p {
@@ -422,16 +429,22 @@ donkerblauw #002857
 }
 
 .answerToetsVraag-right div {
+    border-radius: 6px !important;
     background: transparent !important !important;
-    background-color: transparent !important;
+    background-color: #4B973E !important;
  /*   cursor: default !important;*/
 }
     
 .answerToetsVraag-right .ttxt {
 	box-shadow: 0px 2px #2d6024 !important;
     border-radius: 6px !important;
+    width: 785px !important;
 	height: 90px !important;
 	background-color: #4B973E !important;
+}
+
+.answerToetsVraag-right td {
+    width: 785px !important;
 }
 
 .answerToetsVraag-right p {
@@ -446,16 +459,22 @@ donkerblauw #002857
 }
 
 .answerToetsVraag-wrong div {
+    border-radius: 6px !important;
     background: transparent !important !important;
-    background-color: transparent !important;
+    background-color: #DD1515 !important;
  /*   cursor: default !important;*/
 }
     
 .answerToetsVraag-wrong .ttxt {
 	box-shadow: 0px 2px #9f0f0f !important;
     border-radius: 6px !important;
+    width: 785px !important;
 	height: 90px !important;
 	background-color: #DD1515 !important;
+}
+
+.answerToetsVraag-wrong td {
+    width: 785px !important;
 }
 
 .answerToetsVraag-wrong p {
@@ -478,6 +497,7 @@ donkerblauw #002857
 <link rel="stylesheet" href="trivantis-player.css" type="text/css" />
 <script type='text/javascript' src='es6-promise-2.0.0.min.js'></script>
 <script type='text/javascript' src='jquery-1.12.4.min.js'></script>
+<script type='text/javascript' src='mediaelement-and-player.js'></script>
 <script type='text/javascript' src='trivantis-utils.js'></script>
 <script type='text/javascript' src='trivantis.js'></script>
 <script type='text/javascript' src='trivantis-cookie.js'></script>
@@ -512,8 +532,8 @@ if( !is.min )
     document.write( "Your browser does not support dynamic html. Please download a current version of either <a href='http://www.microsoft.com/ie/'>Microsoft Internet Explorer or Edge</a> or <a href='http://www.apple.com/safari/download/'>Safari</a> or <a href='http://www.mozilla.com/firefox/'>Mozilla Firefox</a> and try visiting our site again. Thank You.<br /><br />" )
 
 var VarQuiz_progress = new Variable( 'VarQuiz_progress', '', 0, 0, '', 365, 'zk_systemen.html', f );
-var VarTriMuteAllFLV = new Variable( 'VarTriMuteAllFLV', '', 0, 0, null, null, 'zk_systemen.html'  );
 var VarQuestion_4819 = new Variable( 'VarQuestion_4819', '', 0, 0, null, null, 'zk_systemen.html', f );
+var VarTriMuteAllFLV = new Variable( 'VarTriMuteAllFLV', '', 0, 0, null, null, 'zk_systemen.html'  );
 var bRcdTitle = true;
 var pgWidth_phonePort = 480;
 var pgWidth_phoneLand = 785;

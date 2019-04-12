@@ -347,8 +347,9 @@ donkerblauw #002857
 }
 
 .answerToetsVraag-right-small div {
+    border-radius: 6px !important;
     background: transparent !important !important;
-    background-color: transparent !important;
+    background-color: #4B973E !important;
  /*   cursor: default !important;*/
 }
     
@@ -371,8 +372,9 @@ donkerblauw #002857
 }
 
 .answerToetsVraag-wrong-small div {
+    border-radius: 6px !important;
     background: transparent !important !important;
-    background-color: transparent !important;
+    background-color: #DD1515 !important;
  /*   cursor: default !important;*/
 }
     
@@ -406,8 +408,13 @@ donkerblauw #002857
 .answerToetsVraag-notselected .ttxt {
 	box-shadow: 0px 2px #b1e0e2 !important;
     border-radius: 6px !important;
+    width: 785px !important;
 	height: 90px !important;
 	background-color: #D6EFF0 !important;
+}
+
+.answerToetsVraag-notselected .ttxt td {
+    width: 785px !important;
 }
 
 .answerToetsVraag-notselected p {
@@ -422,16 +429,22 @@ donkerblauw #002857
 }
 
 .answerToetsVraag-right div {
+    border-radius: 6px !important;
     background: transparent !important !important;
-    background-color: transparent !important;
+    background-color: #4B973E !important;
  /*   cursor: default !important;*/
 }
     
 .answerToetsVraag-right .ttxt {
 	box-shadow: 0px 2px #2d6024 !important;
     border-radius: 6px !important;
+    width: 785px !important;
 	height: 90px !important;
 	background-color: #4B973E !important;
+}
+
+.answerToetsVraag-right td {
+    width: 785px !important;
 }
 
 .answerToetsVraag-right p {
@@ -446,16 +459,22 @@ donkerblauw #002857
 }
 
 .answerToetsVraag-wrong div {
+    border-radius: 6px !important;
     background: transparent !important !important;
-    background-color: transparent !important;
+    background-color: #DD1515 !important;
  /*   cursor: default !important;*/
 }
     
 .answerToetsVraag-wrong .ttxt {
 	box-shadow: 0px 2px #9f0f0f !important;
     border-radius: 6px !important;
+    width: 785px !important;
 	height: 90px !important;
 	background-color: #DD1515 !important;
+}
+
+.answerToetsVraag-wrong td {
+    width: 785px !important;
 }
 
 .answerToetsVraag-wrong p {
@@ -607,6 +626,7 @@ if( is.min ) {
 	var og4102 = new jsWndOther(); //ActionGrRevisit
 	var shape2351 = new jsWndShape(); //Rounded Rectangle
 	var shape2364 = new jsWndShape(); //Rounded Rectangle
+	var shape4954 = new jsWndShape(); //Rectangle
 	var shape2380 = new jsWndShape(); //Rounded Rectangle 2
 	var image3263 = new jsWndImage(); //Stefan
 	var textbutton2368 = new jsWndTextButton(); //Button check
@@ -666,8 +686,8 @@ if( is.min ) {
 	og2389.type=14;
 	var alertCtr = 0;
 	var trivPageId=234; //trivPage.id
-	var arWnds = [image84,text83,textbutton109,textbutton81,shape80,shape93,text97,shape2351,shape2364,shape2380,image3263,entry2374,text2356,text2355,text2381,text2385,text2360,text2376,text3120,textbutton2368,textbutton276,textbutton4105,shape2390,shape2391,text2392,image2393,image2394,image2395,image2396,image2397,image2398,image2399,image2400,image2401,image2402,image2403,image2404,image2405,image2406,image2407,image2408,image2409,image2410,image2411,textbutton2412,text2414];
-	var arAttachObj = [og4,image84,text83,textbutton109,textbutton81,shape80,shape93,text97,og4102,shape2351,shape2364,shape2380,image3263,textbutton2368,entry2374,text2356,text2355,text2381,text2385,text2360,text2376,og3119,text3120,textbutton276,textbutton4105,og2389,shape2390,shape2391,text2392,image2393,image2394,image2395,image2396,image2397,image2398,image2399,image2400,image2401,image2402,image2403,image2404,image2405,image2406,image2407,image2408,image2409,image2410,image2411,textbutton2412,text2414];
+	var arWnds = [image84,text83,textbutton109,textbutton81,shape80,shape93,text97,shape2351,shape2364,shape4954,shape2380,image3263,entry2374,text2356,text2355,text2381,text2385,text2360,text2376,text3120,textbutton2368,textbutton276,textbutton4105,shape2390,shape2391,text2392,image2393,image2394,image2395,image2396,image2397,image2398,image2399,image2400,image2401,image2402,image2403,image2404,image2405,image2406,image2407,image2408,image2409,image2410,image2411,textbutton2412,text2414];
+	var arAttachObj = [og4,image84,text83,textbutton109,textbutton81,shape80,shape93,text97,og4102,shape2351,shape2364,shape4954,shape2380,image3263,textbutton2368,entry2374,text2356,text2355,text2381,text2385,text2360,text2376,og3119,text3120,textbutton276,textbutton4105,og2389,shape2390,shape2391,text2392,image2393,image2394,image2395,image2396,image2397,image2398,image2399,image2400,image2401,image2402,image2403,image2404,image2405,image2406,image2407,image2408,image2409,image2410,image2411,textbutton2412,text2414];
 	var arPooledMedia = [];
 }
 /*! jQuery v3.3.1 | (c) JS Foundation and other contributors | jquery.org/license */

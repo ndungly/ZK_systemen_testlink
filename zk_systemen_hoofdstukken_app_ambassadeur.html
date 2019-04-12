@@ -347,8 +347,9 @@ donkerblauw #002857
 }
 
 .answerToetsVraag-right-small div {
+    border-radius: 6px !important;
     background: transparent !important !important;
-    background-color: transparent !important;
+    background-color: #4B973E !important;
  /*   cursor: default !important;*/
 }
     
@@ -371,8 +372,9 @@ donkerblauw #002857
 }
 
 .answerToetsVraag-wrong-small div {
+    border-radius: 6px !important;
     background: transparent !important !important;
-    background-color: transparent !important;
+    background-color: #DD1515 !important;
  /*   cursor: default !important;*/
 }
     
@@ -406,8 +408,13 @@ donkerblauw #002857
 .answerToetsVraag-notselected .ttxt {
 	box-shadow: 0px 2px #b1e0e2 !important;
     border-radius: 6px !important;
+    width: 785px !important;
 	height: 90px !important;
 	background-color: #D6EFF0 !important;
+}
+
+.answerToetsVraag-notselected .ttxt td {
+    width: 785px !important;
 }
 
 .answerToetsVraag-notselected p {
@@ -422,16 +429,22 @@ donkerblauw #002857
 }
 
 .answerToetsVraag-right div {
+    border-radius: 6px !important;
     background: transparent !important !important;
-    background-color: transparent !important;
+    background-color: #4B973E !important;
  /*   cursor: default !important;*/
 }
     
 .answerToetsVraag-right .ttxt {
 	box-shadow: 0px 2px #2d6024 !important;
     border-radius: 6px !important;
+    width: 785px !important;
 	height: 90px !important;
 	background-color: #4B973E !important;
+}
+
+.answerToetsVraag-right td {
+    width: 785px !important;
 }
 
 .answerToetsVraag-right p {
@@ -446,16 +459,22 @@ donkerblauw #002857
 }
 
 .answerToetsVraag-wrong div {
+    border-radius: 6px !important;
     background: transparent !important !important;
-    background-color: transparent !important;
+    background-color: #DD1515 !important;
  /*   cursor: default !important;*/
 }
     
 .answerToetsVraag-wrong .ttxt {
 	box-shadow: 0px 2px #9f0f0f !important;
     border-radius: 6px !important;
+    width: 785px !important;
 	height: 90px !important;
 	background-color: #DD1515 !important;
+}
+
+.answerToetsVraag-wrong td {
+    width: 785px !important;
 }
 
 .answerToetsVraag-wrong p {
@@ -482,6 +501,7 @@ donkerblauw #002857
 <script type='text/javascript' src='trivantis.js'></script>
 <script type='text/javascript' src='trivantis-cookie.js'></script>
 <script type='text/javascript' src='trivantis-timedate.js'></script>
+<script type='text/javascript' src='trivantis-trans.js'></script>
 <script type='text/javascript' src='trivantis-wndobj.js'></script>
 <script type='text/javascript' src='hammer.js'></script>
 <script>
@@ -563,6 +583,17 @@ function init_page()
 		trivPage.actionMute();
 	}
 }
+
+function finish() {
+    if (window.finishCalled) return;
+    window.finishCalled = true;
+    if( trivCompleteCnt > 0 ) trivExitPage( 'ObjLayerActionExit()', false );
+}
+
+window.onbeforeunload = function(){
+	if (!theApp.is.ie10orLess) finish();
+};
+window.onunload = finish;
 function trivPrevPage() {
     trivExitPage( 'zk_systemen_hoofdstukken_website_functieoverzicht.html', true )
 }
@@ -595,31 +626,40 @@ if( is.min ) {
 	var image2592 = new jsWndImage(); //Tekstwolk3
 	var text2593 = new jsWndText(); //>>>tekst
 	var textbutton2594 = new jsWndTextButton(); //Button play 3
-	var image2598 = new jsWndImage(); //Website portret ambassadeur
+	var image2598 = new jsWndImage(); //App ambassadeur
 	var og2599 = new jsWndOther(); //Video 1
-	var video2600 = new jsWndVideo(); //Amb_Website_5392
+	var video2600 = new jsWndVideo(); //20190328_140647 Wat vinden klanten van de app
+	var shape5029 = new jsWndShape(); //Rectangle1
+	var text5027 = new jsWndText(); //Naam1
+	var text5025 = new jsWndText(); //Functie1
 	var image2601 = new jsWndImage(); //Kruisje
 	var shape2602 = new jsWndShape(); //Click area
 	var og2606 = new jsWndOther(); //Video 2
-	var video2607 = new jsWndVideo(); //Amb_Website_5393
+	var video2607 = new jsWndVideo(); //20190328_141246 Wat maakt de app zo uniek
+	var shape5039 = new jsWndShape(); //Rectangle2
+	var text5037 = new jsWndText(); //Naam2
+	var text5035 = new jsWndText(); //Functie2
 	var image2608 = new jsWndImage(); //Kruisje
 	var shape2609 = new jsWndShape(); //Click area
 	var og2613 = new jsWndOther(); //Video 3
-	var video2614 = new jsWndVideo(); //Amb_Website_5389
+	var video2614 = new jsWndVideo(); //20190328_140328 Waarom een app
+	var shape5048 = new jsWndShape(); //Rectangle3
+	var text5046 = new jsWndText(); //Naam3
+	var text5044 = new jsWndText(); //Functie3
 	var image2615 = new jsWndImage(); //Kruisje
 	var shape2616 = new jsWndShape(); //Click area
 	var textbutton2620 = new jsWndTextButton(); //Volgende
 	og4.type=14;
-	og2599.arChld=[video2600,image2601,shape2602];
+	og2599.arChld=[video2600,shape5029,text5027,text5025,image2601,shape2602];
 	og2599.type=14;
-	og2606.arChld=[video2607,image2608,shape2609];
+	og2606.arChld=[video2607,shape5039,text5037,text5035,image2608,shape2609];
 	og2606.type=14;
-	og2613.arChld=[video2614,image2615,shape2616];
+	og2613.arChld=[video2614,shape5048,text5046,text5044,image2615,shape2616];
 	og2613.type=14;
 	var alertCtr = 0;
 	var trivPageId=2576; //trivPage.id
-	var arWnds = [image84,text83,textbutton109,textbutton81,shape80,shape93,text101,shape2577,text2578,text2579,image2580,text2581,textbutton2582,image2586,text2587,textbutton2588,image2592,text2593,textbutton2594,image2598,video2600,image2601,shape2602,video2607,image2608,shape2609,video2614,image2615,shape2616,textbutton2620];
-	var arAttachObj = [og4,image84,text83,textbutton109,textbutton81,shape80,shape93,text101,shape2577,text2578,text2579,image2580,text2581,textbutton2582,image2586,text2587,textbutton2588,image2592,text2593,textbutton2594,image2598,og2599,video2600,image2601,shape2602,og2606,video2607,image2608,shape2609,og2613,video2614,image2615,shape2616,textbutton2620];
+	var arWnds = [image84,text83,textbutton109,textbutton81,shape80,shape93,text101,shape2577,text2578,text2579,image2580,text2581,textbutton2582,image2586,text2587,textbutton2588,image2592,text2593,textbutton2594,image2598,video2600,shape5029,text5027,text5025,image2601,shape2602,video2607,shape5039,text5037,text5035,image2608,shape2609,video2614,shape5048,text5046,text5044,image2615,shape2616,textbutton2620];
+	var arAttachObj = [og4,image84,text83,textbutton109,textbutton81,shape80,shape93,text101,shape2577,text2578,text2579,image2580,text2581,textbutton2582,image2586,text2587,textbutton2588,image2592,text2593,textbutton2594,image2598,og2599,video2600,shape5029,text5027,text5025,image2601,shape2602,og2606,video2607,shape5039,text5037,text5035,image2608,shape2609,og2613,video2614,shape5048,text5046,text5044,image2615,shape2616,textbutton2620];
 	var arPooledMedia = [];
 }
 /*! jQuery v3.3.1 | (c) JS Foundation and other contributors | jquery.org/license */
