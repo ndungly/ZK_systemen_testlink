@@ -532,7 +532,9 @@ var VarQuiz_progress = new Variable( 'VarQuiz_progress', '', 0, 0, '', 365, 'zk_
 var VarH1 = new Variable( 'VarH1', '', 0, 0, '', 365, 'zk_systemen.html', f );
 var VarH2 = new Variable( 'VarH2', '', 0, 0, '', 365, 'zk_systemen.html', f );
 var VarH3 = new Variable( 'VarH3', '', 0, 0, '', 365, 'zk_systemen.html', f );
+var AICC_Lesson_Status = new Variable( 'AICC_Lesson_Status', '0', 0, 0, null, null, 'zk_systemen.html', f );
 var VarTriMuteAllFLV = new Variable( 'VarTriMuteAllFLV', '', 0, 0, null, null, 'zk_systemen.html'  );
+var VarFirstVisit = new Variable( 'VarFirstVisit', 'False', 0, 0, '', 365, 'zk_systemen.html', f );
 var bRcdTitle = true;
 var pgWidth_phonePort = 480;
 var pgWidth_phoneLand = 785;
@@ -620,6 +622,9 @@ function init_page()
     }},
     {type:6,on:1001,delay:0,name:'OnGroupShow', actItem:function(){
         grpAction1for5108();
+    }},
+    {type:6,on:1001,delay:0,name:'OnGroupShow', actItem:function(){
+        grpAction2for5108();
     }}];
 		og4125.cwObj={};
 		og4125.cwObj.arChld=[
@@ -639,7 +644,12 @@ function init_page()
 		og4133.cwObj.arChld=[
     ];
 		arAudioVideo.push(video4962);
-		if(VarQuiz_progress.contains('05_done')){
+		if(VarFirstVisit.equals('False')){
+video4962.play();
+}
+else video4962.hide(); 
+    if(typeof pF == 'function') pF();
+if(VarQuiz_progress.contains('05_done')){
 {og2175.issueActions(1001);}
 }
 else if(typeof pF == 'function') pF();
@@ -702,6 +712,7 @@ if( is.min ) {
 	var text222 = new jsWndText(); //Klant
 	var og4133 = new jsWndOther(); //Toets knop
 	var image221 = new jsWndImage(); //Toets blok
+	var image5114 = new jsWndImage(); //Vinkje
 	var image5106 = new jsWndImage(); //Lock
 	var text220 = new jsWndText(); //Toets
 	var image4129 = new jsWndImage(); //Click area toets
@@ -810,6 +821,12 @@ if( is.min ) {
 };
 
 	grpAction1for5108 = function(pF){
+    if(AICC_Lesson_Status.equals('completed'))image5114.show(); else if(typeof pF == 'function') pF();
+    if(typeof pF == 'function') pF();
+
+};
+
+	grpAction2for5108 = function(pF){
     image4129.show(); 
     if(typeof pF == 'function') pF();
 
@@ -837,12 +854,12 @@ if( is.min ) {
 	og4125.type=14;
 	og4953.arChld=[image227,image225,text224];
 	og4953.type=14;
-	og4133.arChld=[image221,image5106,text220,image4129];
+	og4133.arChld=[image221,image5114,image5106,text220,image4129];
 	og4133.type=14;
 	var alertCtr = 0;
 	var trivPageId=48; //trivPage.id
-	var arWnds = [shape71,textbutton72,text74,image75,shape89,shape228,image227,image225,text224,image226,image223,text222,image221,image5106,text220,image4129,image219,image218,text217,textbutton215,textbutton2181,image214,image213,textbutton211,textbutton2185,text210,image209,image208,textbutton206,textbutton2195,text205,image204,image203,textbutton201,textbutton2190,text200,video4962];
-	var arAttachObj = [og4,shape71,textbutton72,text74,image75,shape89,og2175,og2228,og2221,og2214,og5108,og4125,shape228,og4953,image227,image225,text224,image226,image223,text222,og4133,image221,image5106,text220,image4129,image219,image218,text217,textbutton215,textbutton2181,image214,image213,textbutton211,textbutton2185,text210,image209,image208,textbutton206,textbutton2195,text205,image204,image203,textbutton201,textbutton2190,text200,video4962];
+	var arWnds = [shape71,textbutton72,text74,image75,shape89,shape228,image227,image225,text224,image226,image223,text222,image221,image5114,image5106,text220,image4129,image219,image218,text217,textbutton215,textbutton2181,image214,image213,textbutton211,textbutton2185,text210,image209,image208,textbutton206,textbutton2195,text205,image204,image203,textbutton201,textbutton2190,text200,video4962];
+	var arAttachObj = [og4,shape71,textbutton72,text74,image75,shape89,og2175,og2228,og2221,og2214,og5108,og4125,shape228,og4953,image227,image225,text224,image226,image223,text222,og4133,image221,image5114,image5106,text220,image4129,image219,image218,text217,textbutton215,textbutton2181,image214,image213,textbutton211,textbutton2185,text210,image209,image208,textbutton206,textbutton2195,text205,image204,image203,textbutton201,textbutton2190,text200,video4962];
 	var arPooledMedia = [video4962];
 }
 /*! jQuery v3.3.1 | (c) JS Foundation and other contributors | jquery.org/license */
